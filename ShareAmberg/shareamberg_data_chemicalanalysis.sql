@@ -36,7 +36,7 @@ CREATE TABLE `data_chemicalanalysis` (
   `created_date` date NOT NULL,
   `modifed_date` date NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,6 +45,7 @@ CREATE TABLE `data_chemicalanalysis` (
 
 LOCK TABLES `data_chemicalanalysis` WRITE;
 /*!40000 ALTER TABLE `data_chemicalanalysis` DISABLE KEYS */;
+INSERT INTO `data_chemicalanalysis` VALUES (1,'Chemical Analysis','https://www.lfu.bayern.de/boden/bodenlehrpfade/doc/tafel_amberg.pdf','PDF','NULL','Hochschule Amberg','Civil Engineering Office',NULL,NULL,'earth, soil, vils, foundations, river, deformations','1988-10-18','2018-09-27');
 /*!40000 ALTER TABLE `data_chemicalanalysis` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-16 16:43:25
+-- Dump completed on 2023-01-16 17:55:01

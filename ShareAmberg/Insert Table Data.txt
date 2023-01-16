@@ -1,0 +1,20 @@
+CREATE TABLE EvacuationPlan(
+ ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+ data_name VARCHAR(50) NOT NULL,
+ data_source VARCHAR(200) NOT NULL,
+ data_file_type VARCHAR(20) NOT NULL,
+ data_link_to_file VARCHAR(200) NOT NULL,
+ data_providers INT(75) NOT NULL,
+ data_maintainers INT(75) NOT NULL,
+ data_latitude DECIMAL(8,6),
+ data_longitude DECIMAL(9,6),
+ keywords VARCHAR(75) NOT NULL,
+ created_date DATE NOT NULL,
+ modifed_date DATE NOT NULL
+ );
+
+#TO INSERT DATA BELOW
+
+insert into data_chemicalanalysis values
+(0, Chemical Analysis, httpswww.lfu.bayern.debodenbodenlehrpfadedoctafel_amberg.pdf, PDF, NULL, Hochschule Amberg,
+ Civil Engineering Office, null, null, earth, soil, vils, foundations, river, deformations, 1988-10-18, 2018-09-27);

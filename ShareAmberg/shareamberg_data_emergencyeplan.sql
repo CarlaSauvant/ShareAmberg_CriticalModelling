@@ -36,7 +36,7 @@ CREATE TABLE `data_emergencyeplan` (
   `created_date` date NOT NULL,
   `modifed_date` date NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,6 +45,7 @@ CREATE TABLE `data_emergencyeplan` (
 
 LOCK TABLES `data_emergencyeplan` WRITE;
 /*!40000 ALTER TABLE `data_emergencyeplan` DISABLE KEYS */;
+INSERT INTO `data_emergencyeplan` VALUES (1,'Emergency Energy Plan','https://stadtwerke-amberg.de/presseartikel/ausrufung-alarmstufe-des-notfallplans-gas.html','PDF','NULL','Stadtwerke-Amberg','Stadtwerke-Amberg',NULL,NULL,'flood, flooding, evacuation, safety, energy, shelter','2021-11-03','2022-01-01');
 /*!40000 ALTER TABLE `data_emergencyeplan` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-16 16:43:24
+-- Dump completed on 2023-01-16 17:55:01

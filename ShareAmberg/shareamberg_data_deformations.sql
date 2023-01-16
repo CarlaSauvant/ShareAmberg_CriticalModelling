@@ -36,7 +36,7 @@ CREATE TABLE `data_deformations` (
   `created_date` date NOT NULL,
   `modifed_date` date NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,6 +45,7 @@ CREATE TABLE `data_deformations` (
 
 LOCK TABLES `data_deformations` WRITE;
 /*!40000 ALTER TABLE `data_deformations` DISABLE KEYS */;
+INSERT INTO `data_deformations` VALUES (1,'Deformations','https://www.adbv-amberg.de/','JSON','NULL','Water Management Office in Weiden','Civil Engineering Office',NULL,NULL,'flood, flooding, vils, naab, riverbed, deformations, water','2015-06-08','2018-12-10');
 /*!40000 ALTER TABLE `data_deformations` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-16 16:43:24
+-- Dump completed on 2023-01-16 17:55:01
