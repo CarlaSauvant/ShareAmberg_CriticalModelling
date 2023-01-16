@@ -26,8 +26,7 @@ CREATE TABLE `head_soilconditions` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `head_name` varchar(50) NOT NULL,
   `head_description` mediumtext,
-  `keywords` varchar(75) DEFAULT NULL,
-  `links` int DEFAULT NULL,
+  `keywords` varchar(75) NOT NULL,
   `created_date` date NOT NULL,
   `modifed_date` date NOT NULL,
   PRIMARY KEY (`ID`)
@@ -52,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-16 12:56:16
+-- Dump completed on 2023-01-16 16:43:25

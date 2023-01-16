@@ -32,10 +32,9 @@ CREATE TABLE `act_climateprotectionoffice` (
   `website_contact_link` varchar(200) NOT NULL,
   `actor_latitude` decimal(8,6) DEFAULT NULL,
   `actor_longitude` decimal(9,6) DEFAULT NULL,
-  `keywords` varchar(75) DEFAULT NULL,
-  `links` int DEFAULT NULL,
-  `created_date` date NOT NULL,
-  `modifed_date` date NOT NULL,
+  `keywords` varchar(75) NOT NULL,
+  `created_date` date DEFAULT NULL,
+  `modifed_date` date DEFAULT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -58,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-16 12:56:16
+-- Dump completed on 2023-01-16 16:43:25

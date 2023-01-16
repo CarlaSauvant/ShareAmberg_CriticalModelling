@@ -25,15 +25,14 @@ DROP TABLE IF EXISTS `data_evacuationplan`;
 CREATE TABLE `data_evacuationplan` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `data_name` varchar(50) NOT NULL,
-  `data_source` varchar(200) NOT NULL,
+  `data_source` varchar(200) DEFAULT NULL,
   `data_file_type` varchar(20) NOT NULL,
   `data_link_to_file` varchar(200) NOT NULL,
-  `data_providers` int NOT NULL,
-  `data_maintainers` int NOT NULL,
+  `data_author` varchar(50) DEFAULT NULL,
+  `data_maintainers` varchar(50) NOT NULL,
   `data_latitude` decimal(8,6) DEFAULT NULL,
   `data_longitude` decimal(9,6) DEFAULT NULL,
   `keywords` varchar(75) DEFAULT NULL,
-  `links` int DEFAULT NULL,
   `created_date` date NOT NULL,
   `modifed_date` date NOT NULL,
   PRIMARY KEY (`ID`)
@@ -58,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-16 12:56:17
+-- Dump completed on 2023-01-16 16:43:24
