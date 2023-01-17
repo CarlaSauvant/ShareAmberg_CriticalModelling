@@ -1,0 +1,8 @@
+insert into act_climatepotectionoffice values
+(0, "Climate Protection Office", "Anne-Katrin Kluth", "Steinhofgasse 2 - 1st floor - room 108", "0962110-1481", "Planungsamt@Amberg.de", "https://www.amberg.de/rathaus/aemter-referate/ansprechpartner", "null", "null", "Climate, Protection");
+
+insert into act_cityplanningoffice values
+(0, "City Planning Office", "Christoph Dereser", "Herrnstrasse 1-3 - 2nd floor - 92224 Amberg", "09621102403", "Klimaschutz@Amberg.de", "https://www.amberg.de/klimaschutz", "null", "null", "City, Planning");
+
+insert into act_amberallianceforfamilies values
+(0,"Amberg Alliance For Families", "Managing Director Tobias Berz", "Herrnstraße 1-3 -92224 Amberg", "09621101221", "tobias.berz@amberg.de", "https://www.amberg.de/rathaus/netzwerke/buendnisse/familie", "null", "null", "Families, Alliance");
