@@ -73,3 +73,7 @@ DROP COLUMN `links`,
 CHANGE COLUMN `keywords` `keywords` VARCHAR(75) NOT NULL ,
 CHANGE COLUMN `created_date` `created_date` DATE NULL ,
 CHANGE COLUMN `modifed_date` `modifed_date` DATE NULL ;
+
+insert into data_chemicalanalysis values
+(0, "Chemical Analysis", "https://www.lfu.bayern.de/boden/bodenlehrpfade/doc/tafel_amberg.pdf", "PDF", "NULL", "Hochschule Amberg",
+ "Civil Engineering Office", null, null, "earth, soil, vils, foundations, river, deformations", "1988-10-18", "2018-09-27");
