@@ -1,0 +1,54 @@
+# change character count in column "keywords" from 75 to 200
+
+ALTER TABLE data_gradientbedmaterial
+	MODIFY COLUMN keywords VARCHAR(200);
+
+ALTER TABLE data_popcount
+	MODIFY COLUMN keywords VARCHAR(200);
+    
+ALTER TABLE data_riverbedcrosssections
+	MODIFY COLUMN keywords VARCHAR(200);
+    
+ALTER TABLE data_shelterlocations
+	MODIFY COLUMN keywords VARCHAR(200);
+    
+ALTER TABLE data_stratigraphy
+	MODIFY COLUMN keywords VARCHAR(200);
+    
+    
+    
+# insert values
+    
+INSERT INTO data_gradientbedmaterial
+	VALUES (0, "Riverbed: Gradient and Bed Material", 0, "PDF", 0, "Climate Protection Office", "Climate Protection Office", NULL, NULL,
+	"riverbed, soil, gradient, earth, water, river, flood, vills", "1980-10-23", "2016-03-17");
+    
+INSERT INTO data_popcount
+	VALUES (0, "Population Count Amberg", 0, "Excel", 0, "Office of Social Affairs", "Office of Social Affairs", NULL, NULL,
+	"amberg, population, count, citizens, demographic", "1967-12-12", "2022-12-05");
+
+INSERT INTO data_riverbedcrosssections
+	VALUES (0, "Crossections of the riverbed", 0, "DWG", 0, "Climate Protection Office", "Climate Protection Office", NULL, NULL,
+	"amberg, vills, water, river, riverbed, section, crossection, plan, flood", "2005-08-26", "2016-03-10");
+
+INSERT INTO data_shelterlocations
+	VALUES (0, "Locations of Shelters", 0, "PDF", 0, "Climate Protection Office", "Climate Protection Office", NULL, NULL,
+	"amberg, vills, river, shelter, emergency, safety, rescue, flood", "2010-11-13", "2021-05-11");
+    
+INSERT INTO data_stratigraphy
+	VALUES (0, "Riverbed Stratigraphy", 0, "PDF", 0, "Climate Protection Office", "Climate Protection Office", NULL, NULL,
+	"amberg, vills, river, flood, riverbed, sediment, stratigraphy, section, earth, soil, layers", "2005-06-03", "2017-03-29");
+    
+    
+    
+# all select statements to view tables
+
+SELECT * FROM data_gradientbedmaterial;
+
+SELECT * FROM data_popcount;
+
+SELECT * FROM data_riverbedcrosssections;
+
+SELECT * FROM data_shelterlocations;
+    
+SELECT * FROM data_stratigraphy;
