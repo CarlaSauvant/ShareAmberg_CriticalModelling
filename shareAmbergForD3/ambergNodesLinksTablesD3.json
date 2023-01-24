@@ -1,0 +1,39 @@
+{
+    "nodes": [
+    {"entityID":1, "entityName":"Emergency Protocol", "entityGroup":1},
+ {"entityID":2, "entityName":"Soil Conditions", "entityGroup":1},
+ {"entityID":3, "entityName":"Riverbed Conditions", "entityGroup":1},
+ {"entityID":4, "entityName":"Amberg Alliance for Families", "entityGroup":3},
+ {"entityID":5, "entityName":"Climate Protection Office", "entityGroup":4},
+ {"entityID":6, "entityName":"City Planning Office", "entityGroup":4},
+ {"entityID":7, "entityName":"Crossections of the riverbed", "entityGroup":2},
+ {"entityID":8, "entityName":"Population Count Amberg", "entityGroup":2},
+ {"entityID":9, "entityName":"Locations of Shelters", "entityGroup":2},
+ {"entityID":10, "entityName":"Riverbed Stratigraphy", "entityGroup":2},
+ {"entityID":11, "entityName":"Chemical Analysis", "entityGroup":2},
+ {"entityID":12, "entityName":"Deformations", "entityGroup":2},
+ {"entityID":13, "entityName":"Drainage Channels", "entityGroup":2},
+ {"entityID":14, "entityName":"Emergency Energy Plan", "entityGroup":2},
+ {"entityID":15, "entityName":"Evacuation Plan", "entityGroup":2},
+ {"entityID":16, "entityName":"Riverbed: Gradient and Bed Material", "entityGroup":2}
+],
+ "links": [
+ {"sourceEnt":1, "targetEnt":4, "value":1},
+ {"sourceEnt":1, "targetEnt":8, "value":4},
+ {"sourceEnt":1, "targetEnt":9, "value":4},
+ {"sourceEnt":1, "targetEnt":14, "value":4},
+ {"sourceEnt":1, "targetEnt":15, "value":4},
+ {"sourceEnt":2, "targetEnt":5, "value":1},
+ {"sourceEnt":2, "targetEnt":6, "value":1},
+ {"sourceEnt":2, "targetEnt":10, "value":4},
+ {"sourceEnt":2, "targetEnt":11, "value":4},
+ {"sourceEnt":2, "targetEnt":12, "value":4},
+ {"sourceEnt":3, "targetEnt":5, "value":1},
+ {"sourceEnt":3, "targetEnt":6, "value":1},
+ {"sourceEnt":3, "targetEnt":7, "value":4},
+ {"sourceEnt":3, "targetEnt":12, "value":4},
+ {"sourceEnt":3, "targetEnt":13, "value":4},
+ {"sourceEnt":3, "targetEnt":16, "value":4}
+]
+}
+
