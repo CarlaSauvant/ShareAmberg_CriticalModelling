@@ -1,71 +1,70 @@
-// https://observablehq.com/@xianwu/clickable-force-directed-graph-network-graph@209
-function _1(md){return(
-md`# clickable Force-Directed Graph(Network graph)`
-)}
+//First we select the color of the backround of our page
+document.body.style.background = "black";
 
-function _2(md){return(
-md`-- SET UP --`
-)}
+// SOME RANDOM FUNCTIONS THAT IF I DELETE IT DOES NOT WORK
+function _1(md){return(md``)}
+function _2(md){return(md``)}
+function _d3(require){return(require('d3@5'))}
+function _margin(){return({top: 30, right: 80, bottom: 5, left: 5})}
+function _width(margin){return(2000 - margin.left - margin.right)}
+function _height(margin){return(500 - margin.top - margin.bottom)}
 
-function _d3(require){return(
-require('d3@5')
-)}
-
-function _margin(){return(
-{top: 30, right: 80, bottom: 5, left: 5}
-)}
-
-function _width(margin){return(
-890 - margin.left - margin.right
-)}
-
-function _height(margin){return(
-800 - margin.top - margin.bottom
-)}
-
-function _7(html){return(
+// HERE WE CAN CHANGE THE LOOK OF THE NETWORK DIAGRAM
+function _7(html){
+// language=HTML format=false
+// language=HTML
+    return(
 html`
-<style> 
+    <style>
+        .links {
+        / / stroke: #FFFFFF;
+            stroke-opacity: 1;
+        / / stroke-width: 50px;
+        }
 
-    .links { 
-    // stroke: #999; 
-    stroke-opacity: 0.4; 
-    // stroke-width: 1px; 
-    }
+        text {
+            pointer-events: none;
+            fill: #ffffff;
+            font: 12px "Courier New";
+            align-content: center;
+            
+        }
 
-    text {
-    pointer-events: none;
-    fill: #000;
-    font: 10px sans-serif;
-    }
+        svg {
+            border: 1px solid #000;
+        }
 
-    svg{
-    border:1px solid #000;
-    }
-
-</style>`
+    </style>`
 )}
 
-function _8(md){return(
-md`-- DATA --`
-)}
+function _8(md){return(md``)}
 
+//FUNCTION D3 IS OUR NETWORK DIAGRAM
+// HERE WE CAN CHANGE THE COLORS OF THE DOTS INTO THE NETWORK (FUNCTION D3)
 function _colorScale(d3){return(
 d3.scaleOrdinal() //=d3.scaleOrdinal(d3.schemeSet2)
-    .domain(["Actors - City Administration", "Actors - Citizenship", "Headlines", "Data", "Team E"])
-    .range(['#ff9e6d', '#86cbff', '#c2e5a0','#fff686','#9e79db'])
+    .domain([
+        "Actors - City Administration",
+        "Actors - Citizenship",
+        "Actors - Educational Institutions",
+        "Actors - State",
+        "Actors - Corporate Relations",
+        "Headlines",
+        "Data"])
+    .range(['#93ee74', '#ffc284', '#43b6b3','#508f86','#9e79db',,'#93ee74','#93ee74'])
 )}
 
 function _simulation(d3,width,height){return(
 d3.forceSimulation()
     .force("link", d3.forceLink() // This force provides links between nodes
                     .id(d => d.id) // This sets the node id accessor to the specified function. If not specified, will default to the index of a node.
-                    .distance(120)
-     ) 
-    .force("charge", d3.forceManyBody().strength(-700)) // This adds repulsion (if it's negative) between nodes. 
+                    .distance(100 //THIS IS THE DISTANCE BETWEEN THE DOTS
+                    )
+     )
+    .force("charge", d3.forceManyBody().strength(-200)) // THIS NUMBER (IF IT'S NEGATIVE) ADDS REPULSION BETWEEN THE NODES
     .force("center", d3.forceCenter(width / 2, height / 2))
 )}
-
+// ANOTHER FUNCTION THAT I DON'T KNOW WHAT IT DOES
 function _myChart(html,d3,width,margin,height,colorScale,simulation)
 {
   const div = html`<div style='max-width: 900px; overflow-x: auto; padding: 0px; margin: 0px;'></div>`;
@@ -74,96 +73,165 @@ function _myChart(html,d3,width,margin,height,colorScale,simulation)
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
     .append("g")
-        .attr("transform", `translate(${margin.left},${margin.top})`); 
-  
-  const subgraphWidth = width*2/8;
-const subgraphHeight = height*1/5;      
+        .attr("transform", `translate(${margin.left},${margin.top})`);
 
-const subgraph = svg.append("g")
-    .attr("id", "subgraph")
-    .attr("transform", `translate(${width - subgraphWidth - 20}, 0)`);
-    
-subgraph.append("text")
-        .style("font-size","16px")
   
- //appending little triangles, path object, as arrowhead
-//The <defs> element is used to store graphical objects that will be used at a later time
-//The <marker> element defines the graphic that is to be used for drawing arrowheads or polymarkers on a given <path>, <line>, <polyline> or <polygon> element.
-svg.append('defs').append('marker')
-    .attr("id",'arrowhead')
-    .attr('viewBox','-0 -5 10 10') //the bound of the SVG viewport for the current SVG fragment. defines a coordinate system 10 wide and 10 high starting on (0,-5)
-     .attr('refX',24) // x coordinate for the reference point of the marker. If circle is bigger, this need to be bigger.
-     .attr('refY',0)
-     .attr('orient','auto')
-        .attr('markerWidth',6)
-        .attr('markerHeight',6)
-        .attr('xoverflow','visible')
-    .append('svg:path')
-    .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
-    .attr('fill', '#999')
-    .style('stroke','none');
-  
-  svg.append("text")
-      .text("Robot Components")
-      .attr("text-anchor","middle")
-      .attr("x",width/2)
-      .style("font-size","20px")
-  
-//create some data
+//DATASET OF OUR NETWORK DIAGRAM
+
 const dataset =  {
   nodes: [
-        {id:1, name:"Emergency Protocol", group:"Headlines", runtime: 20},
-        {id:2, name:"Soil Conditions", group:"Headlines", runtime: 60},
-        {id:3, name:"Riverbed Conditions", group:"Headlines", runtime: 30},
-        {id:4, name:"Amberg Alliance for Families", group:"Actors - Citizenship", runtime: 40},
-        {id:5, name:"Climate Protection Office", group:"Actors - City Administration", runtime: 20},
-        {id:6, name:"City Planning Office", group:"Actors - City Administration", runtime: 60},
-        {id:7, name:"Crossections of the riverbed", group:"Data", runtime: 60},
-        {id:8, name:"Population Count Amberg", group:"Data", runtime: 100},
-        {id:9, name:"Locations of Shelters", group:"Data", runtime: 80},
-        {id:10, name:"Riverbed Stratigraphy", group:"Data", runtime: 20},
-        {id:11, name:"Chemical Analysis", group:"Data", runtime: 240},
-        {id:12, name:"Deformations", group:"Data", runtime: 30},
-        {id:13, name:"Drainage Channels", group:"Data", runtime: 40},
-        {id:14, name:"Emergency Energy Plan", group:"Data", runtime: 30},
-        {id:15, name:"Evacuation Plan", group:"Data", runtime: 30},
-        {id:16, name:"Riverbed: Gradient and Bed Material", group:"Data", runtime: 30}
-	], 
+      {id:1, name:"Emergency Protocol", group:"Headlines", runtime:60},
+      {id:2, name:"Soil Conditions", group:"Headlines", runtime:60},
+      {id:3, name:"Riverbed Conditions", group:"Headlines", runtime:60},
+      {id:4, name:"Amberg Alliance for Families", group:"Actors - Citizenship", runtime:60},
+      {id:5, name:"Climate Protection Office", group:"Actors - City Administration", runtime:60},
+      {id:6, name:"City Planning Office", group:"Actors - City Administration", runtime:60},
+      {id:7, name:"Crossections of the riverbed", group:"Data", runtime:60},
+      {id:8, name:"Population Count Amberg", group:"Data", runtime:60},
+      {id:9, name:"Locations of Shelters", group:"Data", runtime:60},
+      {id:10, name:"Riverbed Stratigraphy", group:"Data", runtime:60},
+      {id:11, name:"Chemical Analysis", group:"Data", runtime:60},
+      {id:12, name:"Deformations", group:"Data", runtime:60},
+      {id:13, name:"Drainage Channels", group:"Data", runtime:60},
+      {id:14, name:"Emergency Energy Plan", group:"Data", runtime:60},
+      {id:15, name:"Evacuation Plan", group:"Data", runtime:60},
+      {id:16, name:"Riverbed: Gradient and Bed Material", group:"Data", runtime:60},
+      {id:17, name:"Satellite Images", group:"Data", runtime:60},
+      {id:18, name:"Aerial Images", group:"Data", runtime:60},
+      {id:19, name:"Canal Cadastre", group:"Data", runtime:60},
+      {id:20, name:"Street Cadastre", group:"Data", runtime:60},
+      {id:21, name:"Survey About Floodings Impact on Personal Life", group:"Data", runtime:60},
+      {id:22, name:"Sensor Maintnance Data", group:"Data", runtime:60},
+      {id:23, name:"Flooded Areas", group:"Data", runtime:60},
+      {id:24, name:"Water Quality", group:"Data", runtime:60},
+      {id:25, name:"Rainfall Levels", group:"Data", runtime:60},
+      {id:26, name:"River Discharge", group:"Data", runtime:60},
+      {id:27, name:"Water Level Gauge", group:"Data", runtime:60},
+      {id:28, name:"Flood Protection Wall", group:"Data", runtime:60},
+      {id:29, name:"Ecluse", group:"Data", runtime:60},
+      {id:30, name:"Floodgates", group:"Data", runtime:60},
+      {id:31, name:"Injuries and Casualties", group:"Data", runtime:60},
+      {id:32, name:"Past Flood Damages", group:"Data", runtime:60},
+      {id:33, name:"Cost of Flood Prevention", group:"Data", runtime:60},
+      {id:34, name:"Citizen Surveys", group:"Headlines", runtime:60},
+      {id:35, name:"Mapping - Hazard and Inundation", group:"Headlines", runtime:60},
+      {id:36, name:"Architecture Competition on Flood Wall", group:"Headlines", runtime:60},
+      {id:37, name:"City Maps", group:"Headlines", runtime:60},
+      {id:38, name:"River Water", group:"Headlines", runtime:60},
+      {id:39, name:"Infrastructure Objects", group:"Headlines", runtime:60},
+      {id:40, name:"Flooding History", group:"Headlines", runtime:60},
+      {id:41, name:"Socioeconomic Development", group:"Headlines", runtime:60},
+      {id:42, name:"Education Program on Flood Protocols", group:"Headlines", runtime:60},
+      {id:43, name:"Citizens", group:"Actors - Citizenship", runtime:60},
+      {id:44, name:"TUM", group:"Actors - Educational Institutions", runtime:60},
+      {id:45, name:"Schools", group:"Actors - Educational Institutions", runtime:60},
+      {id:46, name:"Hochschule Amberg", group:"Actors - Educational Institutions", runtime:60},
+      {id:47, name:"State of Bavaria", group:"Actors - State", runtime:60},
+      {id:48, name:"Civil Participation Office", group:"Actors - City Administration", runtime:60},
+      {id:49, name:"City Council", group:"Actors - City Administration", runtime:60},
+      {id:50, name:"Office of Social Affairs", group:"Actors - City Administration", runtime:60},
+      {id:51, name:"City Archive", group:"Actors - City Administration", runtime:60},
+      {id:52, name:"Civil Engineering Office", group:"Actors - City Administration", runtime:60},
+      {id:53, name:"Budget + Tax Office", group:"Actors - City Administration", runtime:60},
+      {id:54, name:"SentinelHUB", group:"Actors - Corporate Relations", runtime:60},
+      {id:55, name:"Bayern Atlas", group:"Actors - Corporate Relations", runtime:60},
+      {id:56, name:"Bayernwerke", group:"Actors - Corporate Relations", runtime:60},
+      {id:57, name:"Water management Office in Weiden", group:"Actors - Corporate Relations", runtime:60},
+      {id:58, name:"Auerheimer Engineering Bureau", group:"Actors - Corporate Relations", runtime:60},
+      {id:59, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60}
+	],
   links: [
-    {source: 1, target: 4, type: 'Next -->>'},
-    {source: 1, target: 5, type: 'Next -->>'},
-    {source: 1, target: 8, type: 'Next -->>'},
-    {source: 1, target: 9, type: 'Next -->>'},
-    {source: 1, target: 14, type: 'Next -->>'},
-    {source: 1, target: 15, type: 'Next -->>'},
-    {source: 2, target: 5, type: 'Next -->>'},
-    {source: 2, target: 6, type: 'Next -->>'},
-    {source: 2, target: 10, type: 'Next -->>'},
-    {source: 2, target: 11, type: 'Next -->>'},
-    {source: 2, target: 12, type: 'Next -->>'},
-    {source: 3, target: 5, type: 'Go to ->>'},
-    {source: 3, target: 6, type: 'Go to ->>'},
-    {source: 3, target: 7, type: 'Go to ->>'},
-    {source: 3, target: 12, type: 'Go to ->>'},
-    {source: 3, target: 13, type: 'Go to ->>'},
-    {source: 3, target: 16, type: 'Go to ->>'}
+      {source: 1, target:4},
+      {source: 42, target:4},
+      {source: 2, target:5},
+      {source: 3, target:5},
+      {source: 22, target:5},
+      {source: 35, target:5},
+      {source: 36, target:5},
+      {source: 38, target:5},
+      {source: 2, target:6},
+      {source: 3, target:6},
+      {source: 35, target:6},
+      {source: 36, target:6},
+      {source: 37, target:6},
+      {source: 38, target:6},
+      {source: 3, target:7},
+      {source: 37, target:7},
+      {source: 1, target:8},
+      {source: 1, target:9},
+      {source: 2, target:10},
+      {source: 2, target:11},
+      {source: 2, target:12},
+      {source: 3, target:12},
+      {source: 3, target:13},
+      {source: 1, target:14},
+      {source: 1, target:15},
+      {source: 3, target:16},
+      {source: 37, target:17},
+      {source: 37, target:18},
+      {source: 37, target:19},
+      {source: 37, target:20},
+      {source: 34, target:21},
+      {source: 37, target:23},
+      {source: 40, target:23},
+      {source: 38, target:24},
+      {source: 38, target:25},
+      {source: 38, target:26},
+      {source: 38, target:27},
+      {source: 39, target:27},
+      {source: 36, target:28},
+      {source: 39, target:28},
+      {source: 39, target:29},
+      {source: 39, target:30},
+      {source: 40, target:31},
+      {source: 40, target:32},
+      {source: 41, target:32},
+      {source: 39, target:33},
+      {source: 41, target:33},
+      {source: 3, target:38},
+      {source: 1, target:42},
+      {source: 34, target:43},
+      {source: 36, target:43},
+      {source: 42, target:44},
+      {source: 42, target:45},
+      {source: 36, target:46},
+      {source: 41, target:47},
+      {source: 34, target:48},
+      {source: 36, target:48},
+      {source: 36, target:49},
+      {source: 42, target:50},
+      {source: 40, target:51},
+      {source: 41, target:51},
+      {source: 39, target:52},
+      {source: 41, target:52},
+      {source: 41, target:53},
+      {source: 37, target:54},
+      {source: 37, target:55},
+      {source: 1, target:56},
+      {source: 3, target:57},
+      {source: 35, target:57},
+      {source: 38, target:57},
+      {source: 39, target:57},
+      {source: 40, target:57},
+      {source: 38, target:58},
+      {source: 38, target:59}
   ]
 };
 
     console.log("dataset is ...",dataset);
 
-// Initialize the links
+// HERE WE CAN CHANGE THE STYLE OF THE LINKS
 const link = svg.selectAll(".links")
         .data(dataset.links)
         .enter()
         .append("line")
         .attr("class", "links")
-        .attr("stroke","#999")
+        .attr("stroke","#FFFFFF")
         .attr("stroke-width","2px")
-        .style("opacity", 0.8)
+        .style("opacity", 0.85)
         .attr("id",d=> "line"+d.source+d.target)
         .attr("class", "links")
-        .attr('marker-end','url(#arrowhead)') //The marker-end attribute defines the arrowhead or polymarker that will be drawn at the final vertex of the given shape.
+
 
 
 //The <title> element provides an accessible, short-text description of any SVG container element or graphics element.
@@ -188,7 +256,7 @@ const edgelabels = svg.selectAll(".edgelabel")
         .style("pointer-events", "none")
         .attr('class', 'edgelabel')
         .attr('id', function (d, i) {return 'edgelabel' + i})
-        .attr('font-size', 10)
+        .attr('font-size', 5)
         .attr('fill', '#aaa');
 
 edgelabels.append('textPath') //To render text along the shape of a <path>, enclose the text in a <textPath> element that has an href attribute with a reference to the <path> element.
@@ -210,10 +278,11 @@ node.call(d3.drag() //sets the event listener for the specified typenames and re
         .on("drag", dragged)      //drag - after an active pointer moves (on mousemove or touchmove).
     );
 
+// HERE WE CAN CHANGE THE STYLE OF THE DOTS
 node.append("circle")
     .attr("r", d=> 17)//+ d.runtime/20 )
     .attr("id",d=> "circle"+d.id)
-    .style("stroke", "grey")
+    .style("stroke", "white")
     .style("stroke-opacity",0.3)
     .style("stroke-width", d => d.runtime/10)
     .style("fill", d => colorScale(d.group))
@@ -221,14 +290,11 @@ node.append("circle")
 node.append("title")
     .text(d => d.id + ": " + d.label + " - " + d.group +", runtime:"+ d.runtime+ "min");
 
+//HERE WE CAN SHOW THE LABLE OF THE NODE
 node.append("text")
     .attr("dy", 4)
     .attr("dx", -15)
     .text(d => d.name);
-node.append("text")
-    .attr("dy",12)
-    .attr("dx", -8)
-    .text(d=> d.runtime);
 
   //set up dictionary of neighbors
   var neighborTarget= {};
@@ -256,16 +322,11 @@ console.log("neighborTarget is ",neighborTarget);
  node.selectAll("circle").on("click",function(d){
 
             var active = d.active? false : true // toggle whether node is active
-            , newStroke = active ? "yellow":"grey"
-            , newStrokeIn = active ? "green":"grey"
+            , newStroke = active ? "blue":"grey"
+            , newStrokeIn = active ? "red":"grey"
             , newStrokeOut = active? "red": "grey"
             , newOpacity = active? 0.6: 0.3
             , subgraphOpacity = active? 0.9:0;
-
-            subgraph.selectAll("text")
-                    .text("Selected: " +d.label)
-                    .attr("dy",14)
-                    .attr("dx",14)
 
             //extract node's id and ids of its neighbors
             var id =d.id
@@ -277,7 +338,7 @@ console.log("neighborTarget is ",neighborTarget);
    
             d3.selectAll("#subgraph").style("opacity",subgraphOpacity)
 
-            //highlight the current node and its neighbors
+            //HERE WE CAN HIGHLIGHT THE CLICKED NODE AND ITS NEIGHBORS
             for (var i =0; i < neighborS.length; i++){
               d3.selectAll("#line"+neighborS[i]+id).style("stroke", newStrokeIn);
               d3.selectAll("#circle"+neighborS[i]).style("stroke-opacity", newOpacity).style("stroke", newStrokeIn);

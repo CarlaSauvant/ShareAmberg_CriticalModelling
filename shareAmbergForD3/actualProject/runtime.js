@@ -1,4 +1,3 @@
-// @observablehq/runtime v5.3.2 Copyright 2023 Observable, Inc.
 function e(e, t, n) {
     n = n || {};
     var r = e.ownerDocument,
