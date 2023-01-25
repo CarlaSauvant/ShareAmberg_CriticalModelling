@@ -1,0 +1,14 @@
+{
+  "name": "@jienagu/network-d3-force-graph",
+  "main": "23c1380475c146c7@79.js",
+  "version": "79.0.0",
+  "homepage": "https://observablehq.com/@jienagu/network-d3-force-graph",
+  "author": {
+    "name": "Jiena",
+    "url": "https://observablehq.com/@jienagu"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
