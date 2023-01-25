@@ -1,0 +1,40 @@
+{
+    "nodes": [
+    {"name":"Emergency Protocol", "group":1},
+ {"name":"Soil Conditions", "group":1},
+ {"name":"Riverbed Conditions", "group":1},
+ {"name":"Amberg Alliance for Families", "group":3},
+ {"name":"Climate Protection Office", "group":4},
+ {"name":"City Planning Office", "group":4},
+ {"name":"Crossections of the riverbed", "group":2},
+ {"name":"Population Count Amberg", "group":2},
+ {"name":"Locations of Shelters", "group":2},
+ {"name":"Riverbed Stratigraphy", "group":2},
+ {"name":"Chemical Analysis", "group":2},
+ {"name":"Deformations", "group":2},
+ {"name":"Drainage Channels", "group":2},
+ {"name":"Emergency Energy Plan", "group":2},
+ {"name":"Evacuation Plan", "group":2},
+ {"name":"Riverbed: Gradient and Bed Material", "group":2}
+],
+ "links": [
+ {"source":0, "target":3, "value":1},
+  {"source":0, "target":4, "value":1},
+ {"source":0, "target":7, "value":4},
+ {"source":0, "target":8, "value":4},
+ {"source":0, "target":13, "value":4},
+ {"source":0, "target":14, "value":4},
+ {"source":1, "target":4, "value":1},
+ {"source":1, "target":5, "value":1},
+ {"source":1, "target":9, "value":4},
+ {"source":1, "target":10, "value":4},
+ {"source":1, "target":11, "value":4},
+ {"source":2, "target":4, "value":1},
+ {"source":2, "target":5, "value":1},
+ {"source":2, "target":6, "value":4},
+ {"source":2, "target":11, "value":4},
+ {"source":2, "target":12, "value":4},
+ {"source":2, "target":15, "value":4}
+]
+}
+
