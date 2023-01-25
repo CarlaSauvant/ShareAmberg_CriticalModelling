@@ -1,11 +1,5 @@
-// https://observablehq.com/@jienagu/network-d3-force-graph@79
-function _1(md){return(
-md`# Network D3 Force graph`
-)}
-
-function _d3(require){return(
-require('d3@5')
-)}
+function _1(md){return(md``)}
+function _d3(require){return(require('d3@5'))}
 
 function _margin(){return(
 {top: 30, right: 80, bottom: 30, left: 30}
@@ -124,7 +118,7 @@ function _myChart(html,d3,width,margin,height,simulation)
         .selectAll("image")
         .data(dataset.nodes)
       .enter().append("image")
-        .attr("xlink:href",  function(d) { return d.img;})
+        .attr("xlink:href",  function(d) { return d.img ;})
         .attr("width",  function(d) { return d.size + 5;})
         .attr("height", function(d) { return d.size + 5;})
         .on("mouseover", function(d){d3.select(this)
