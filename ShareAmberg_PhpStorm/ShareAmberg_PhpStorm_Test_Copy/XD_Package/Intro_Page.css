@@ -1,0 +1,395 @@
+.mediaViewInfo {
+	--web-view-name: Intro Page;
+	--web-view-id: Intro_Page;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-show-scale-controls: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Intro_Page;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Intro_Page {
+	position: absolute;
+	width: 1920px;
+	height: 3516px;
+	background-color: rgba(0,0,0,1);
+	overflow: hidden;
+	--web-view-name: Intro Page;
+	--web-view-id: Intro_Page;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-show-scale-controls: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+#Ellipse_19 {
+	fill: rgba(255,255,255,1);
+}
+.Ellipse_19 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 535px;
+	top: 2967px;
+}
+#Ellipse_20 {
+	fill: rgba(255,255,255,1);
+}
+.Ellipse_20 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1511px;
+	top: 2878px;
+}
+#Linie_48 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Linie_48 {
+	overflow: visible;
+	position: absolute;
+	width: 583.314px;
+	height: 415.263px;
+	left: 558.5px;
+	top: 2990.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Linie_49 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Linie_49 {
+	overflow: visible;
+	position: absolute;
+	width: 398.141px;
+	height: 503.477px;
+	left: 1139.5px;
+	top: 2901.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Linie_47 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Linie_47 {
+	overflow: visible;
+	position: absolute;
+	width: 976.363px;
+	height: 92.983px;
+	left: 558.5px;
+	top: 2901.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Remi_card {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	left: 249px;
+	top: 2681px;
+	overflow: visible;
+}
+#Remi_headshot_edited {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Rmi_Koumakpayi {
+	left: 28px;
+	top: 23px;
+	position: absolute;
+	overflow: visible;
+	width: 217px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(0,0,0,1);
+}
+#Fabio_card {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	left: 1225px;
+	top: 2592px;
+	overflow: visible;
+}
+#Fabio_headshot_edited {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Fabio_Sala {
+	left: 28px;
+	top: 22px;
+	position: absolute;
+	overflow: visible;
+	width: 145px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(0,0,0,1);
+}
+#Carla_card {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	left: 829px;
+	top: 3093px;
+	overflow: visible;
+}
+#Carla_headshot_edited {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Carla_Sauvant {
+	left: 25px;
+	top: 24px;
+	position: absolute;
+	overflow: visible;
+	width: 188px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(0,0,0,1);
+}
+#goal_about_us {
+	fill: rgba(255,255,255,0);
+}
+.goal_about_us {
+	position: absolute;
+	overflow: visible;
+	width: 81px;
+	height: 43px;
+	left: 944px;
+	top: 2992px;
+}
+#goal_description {
+	fill: rgba(255,255,255,0);
+}
+.goal_description {
+	position: absolute;
+	overflow: visible;
+	width: 81px;
+	height: 43px;
+	left: 920px;
+	top: 1457px;
+}
+#Chair_of_Architectural_Informa {
+	left: 1337px;
+	top: 3362px;
+	position: absolute;
+	overflow: visible;
+	width: 491px;
+	height: 27px;
+	line-height: 50px;
+	margin-top: -13px;
+	text-align: center;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(255,249,0,1);
+}
+#Technical_University_of_Munich {
+	left: 1366px;
+	top: 3312px;
+	position: absolute;
+	overflow: visible;
+	width: 433px;
+	white-space: nowrap;
+	line-height: 50px;
+	margin-top: -13px;
+	text-align: center;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(255,249,0,1);
+}
+#Ellipse_21 {
+	fill: rgba(255,255,255,1);
+}
+.Ellipse_21 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1116px;
+	top: 3379px;
+}
+#Gruppe_54 {
+	position: absolute;
+	width: 115px;
+	height: 93px;
+	left: 903px;
+	top: 2305px;
+	overflow: visible;
+}
+#Gruppe_50 {
+	position: absolute;
+	width: 91px;
+	height: 54px;
+	left: 12px;
+	top: 39px;
+	overflow: visible;
+}
+#Rechteck_28 {
+	fill: rgba(255,255,255,1);
+}
+.Rechteck_28 {
+	position: absolute;
+	overflow: visible;
+	width: 49px;
+	height: 34px;
+	left: 21px;
+	top: 0px;
+}
+#Polygon_3 {
+	fill: rgba(255,255,255,1);
+}
+.Polygon_3 {
+	overflow: visible;
+	position: absolute;
+	width: 91px;
+	height: 27px;
+	transform: translate(-813.16px, -855.793px) matrix(1,0,0,1,813.1602,882.7935) rotate(180deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#about_us {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 116px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+#logo_fade {
+	position: absolute;
+	width: 667px;
+	height: 668px;
+	left: 627px;
+	top: 282px;
+	overflow: visible;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Main_Page.html;
+	cursor: pointer;
+}
+#black_background_logo {
+	fill: rgba(0,0,0,1);
+}
+.black_background_logo {
+	position: absolute;
+	overflow: visible;
+	width: 622px;
+	height: 614px;
+	left: 30px;
+	top: 37px;
+}
+#DATA_MODELLING_LOGO-02 {
+	position: absolute;
+	width: 667px;
+	height: 668px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Gruppe_106 {
+	position: absolute;
+	width: 533px;
+	height: 155px;
+	left: 682px;
+	top: 1623px;
+	overflow: visible;
+}
+#Rechteck_37 {
+	fill: rgba(0,0,0,1);
+}
+.Rechteck_37 {
+	position: absolute;
+	overflow: visible;
+	width: 448px;
+	height: 108px;
+	left: 41px;
+	top: 21px;
+}
+#DATA_MODELLING_LOGO-01-03 {
+	position: absolute;
+	width: 533px;
+	height: 155px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Welcome_to____________________ {
+	left: 571px;
+	top: 1717px;
+	position: absolute;
+	overflow: visible;
+	width: 779px;
+	white-space: nowrap;
+	line-height: 50px;
+	margin-top: -13px;
+	text-align: left;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
