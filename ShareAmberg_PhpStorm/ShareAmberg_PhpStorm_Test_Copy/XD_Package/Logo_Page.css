@@ -1,0 +1,53 @@
+.mediaViewInfo {
+	--web-view-name: Logo Page;
+	--web-view-id: Logo_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Logo_Page;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Logo_Page {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(25,19,31,1);
+	overflow: hidden;
+	--web-view-name: Logo Page;
+	--web-view-id: Logo_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+#DATA_MODELLING_LOGO_Logo_colou {
+	position: absolute;
+	width: 613px;
+	height: 613px;
+	left: 654px;
+	top: 220px;
+	overflow: visible;
+}
+#Invisible_button {
+	fill: transparent;
+}
+.Invisible_button {
+	position: absolute;
+	overflow: visible;
+	width: 687px;
+	height: 564px;
+	left: 617px;
+	top: 245px;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Intro_Page.html;
+	cursor: pointer;
+}
