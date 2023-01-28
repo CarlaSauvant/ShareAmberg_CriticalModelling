@@ -2904,5 +2904,7 @@ var Application = function() {
 	window.addEventListener("load", self.onloadHandler);
 	window.document.addEventListener("DOMContentLoaded", self.onloadHandler);
 }
+let text = document.getElementById("Welcome_to____________________");
+text.innerHTML = text.innerHTML.replace(/ /g, "&nbsp;");
 
 window.application = new Application();

@@ -9,7 +9,7 @@
 
 if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
 
-var Application = function() {
+var Application = function() { 
 	// event constants
 	this.prefix = "--web-";
 	this.NAVIGATION_CHANGE = "viewChange";
