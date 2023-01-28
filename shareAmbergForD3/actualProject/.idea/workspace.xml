@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="935b04f0-7cf6-4b80-b24a-55d899005b89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exampleProject/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors Text Fabio.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../All_Separated/AllSeparated.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../All_Separated/AllSeparated.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Presentation_230124/Presentation_230124.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Presentation_230124/Presentation_230124.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergDiagram.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergDiagram.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergDiagram.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergDiagram.mwb.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergTablesScripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergTablesScripts.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/Php_Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/Php_Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/City of Amberg.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/City of Amberg.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/City of Amberg.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/City of Amberg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/ShareAmberg.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/ShareAmberg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/City of Amberg.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/City of Amberg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/ShareAmberg.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/ShareAmberg.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ambergNodesLinksTablesD3.json" beforeDir="false" afterPath="$PROJECT_DIR$/ambergNodesLinksTablesD3.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d99fd79dd14c23b8@209.js" beforeDir="false" afterPath="$PROJECT_DIR$/d99fd79dd14c23b8@209.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inspector.css" beforeDir="false" afterPath="$PROJECT_DIR$/inspector.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exampleProject/23c1380475c146c7@79.js" beforeDir="false" afterPath="$PROJECT_DIR$/../exampleProject/23c1380475c146c7@79.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shareAmbergNodesLinksFull.json" beforeDir="false" afterPath="$PROJECT_DIR$/../shareAmbergNodesLinksFull.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Fabio/Desktop/Share Ambger _ Git/ShareAmberg_CriticalModelling/shareAmbergForD3/actualProject",
+    "last_opened_file_path": "C:/Users/kouma/OneDrive/Documents/School Work/Session 5/Projet/ShareAmberg_Git/ShareAmberg_CriticalModelling/shareAmbergForD3/exampleProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,6 +74,7 @@
       <workItem from="1674636818606" duration="6395000" />
       <workItem from="1674644393943" duration="21000" />
       <workItem from="1674644570066" duration="14838000" />
+      <workItem from="1674898894357" duration="4144000" />
     </task>
     <servers />
   </component>
