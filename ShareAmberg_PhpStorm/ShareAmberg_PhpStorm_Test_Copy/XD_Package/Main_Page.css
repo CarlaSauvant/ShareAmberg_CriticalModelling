@@ -1306,3 +1306,51 @@
 	left: 0px;
 	top: 0px;
 }
+
+#group_menubar {
+	position: absolute;
+	width: 37%;
+	height: auto;
+	left: 5%;
+	top: 8%;
+	overflow: visible;
+}
+#group_menubar_content {
+	position: absolute;
+	width: 40%;
+	height: auto;
+	right: 0;
+	top: 0;
+	overflow: visible;
+}
+#Logo_navyblue {
+	position: absolute;
+	width: 80%;
+	height: auto;
+	right: 0;
+	top: 0;
+	overflow: visible;
+}
+#Logo_syncup_navyblue {
+	position: absolute;
+	width: 80%;
+	height: auto;
+	right: 0;
+	top: 0;
+	overflow: visible;
+}
+#Buttons_menubar {
+
+}
+#Buttons_menubutton {
+
+}
+#Button_freeexplore {
+
+}
+#Button_search {
+
+}
+#Button_uploaddata {
+
+}
