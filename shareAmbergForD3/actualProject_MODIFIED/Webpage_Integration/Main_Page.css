@@ -1,0 +1,842 @@
+.mediaViewInfo {
+	--web-view-name: Main Page;
+	--web-view-id: Main_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Main_Page;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Main_Page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(25,19,31,1);
+	overflow: hidden;
+	--web-view-name: Main Page;
+	--web-view-id: Main_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+
+
+
+
+
+#Gruppe_103 {
+	position: absolute;
+	width: 294px;
+	height: 27px;
+	left: 83px;
+	top: 946px;
+	overflow: visible;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Intro_Page.html;
+	cursor: pointer;
+}
+#white_background_backtointropa {
+	fill: rgba(25,19,31,1);
+}
+.white_background_backtointropa {
+	overflow: visible;
+	position: absolute;
+	width: 20px;
+	height: 18px;
+	transform: translate(-74px, -946px) matrix(1,0,0,1,73,950) rotate(-90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#back_to_intro_page {
+	left: 35px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 260px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(25,19,31,1);
+}
+#Gruppe_107 {
+	position: absolute;
+	width: 292px;
+	height: 47px;
+	left: 111px;
+	top: 317px;
+	overflow: visible;
+}
+
+
+
+
+#Author {
+	left: 48.162px;
+	top: 2px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: left;
+	font-weight: bold;
+}
+#Keywords {
+	left: 48px;
+	top: 149px;
+	position: absolute;
+	overflow: visible;
+	width: 78px;
+	white-space: nowrap;
+	text-align: left;
+	font-weight: bold;
+	}
+#checkbox {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 36px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+
+#checkbox_bi {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 73px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_bk {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 110px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_bm {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 181px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_bo {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 292px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_bq {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 403px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_bs {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 514px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_bu {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 625px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_bw {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 736px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_by {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 847px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_b {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 218px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_ca {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 329px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_cb {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 440px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_cc {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 551px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_cd {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 662px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_ce {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 773px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_cf {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 884px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_cg {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 255px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_ch {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 366px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_ci {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 477px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_ck {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 588px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_cm {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 699px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#checkbox_co {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 48px;
+	top: 810px;
+	overflow: visible;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(25,19,31,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	cursor: pointer;
+}
+#Climate_Protection_Office {
+	left: 95.162px;
+	top: 39px;
+	position: absolute;
+	overflow: visible;
+	width: 241px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Flooding {
+	left: 95px;
+	top: 186px;
+	position: absolute;
+	overflow: visible;
+	width: 78px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Flood {
+	left: 95px;
+	top: 556px;
+	position: absolute;
+	overflow: visible;
+	width: 49px;
+	white-space: nowrap;
+	text-align: left;
+}
+#City_Planning_Office {
+	left: 95.162px;
+	top: 76px;
+	position: absolute;
+	overflow: visible;
+	width: 193px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Damage {
+	left: 95px;
+	top: 889px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Architecture {
+	left: 95px;
+	top: 223px;
+	position: absolute;
+	overflow: visible;
+	width: 116px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Section {
+	left: 95px;
+	top: 593px;
+	position: absolute;
+	overflow: visible;
+	width: 68px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Amberg_Alliance_for_Families {
+	left: 95.162px;
+	top: 113px;
+	position: absolute;
+	overflow: visible;
+	width: 270px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Emergency {
+	left: 95px;
+	top: 260px;
+	position: absolute;
+	overflow: visible;
+	width: 87px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Citizens {
+	left: 95px;
+	top: 630px;
+	position: absolute;
+	overflow: visible;
+	width: 78px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Municipality {
+	left: 95px;
+	top: 297px;
+	position: absolute;
+	overflow: visible;
+	width: 116px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Education {
+	left: 95px;
+	top: 667px;
+	position: absolute;
+	overflow: visible;
+	width: 87px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Amberg {
+	left: 95px;
+	top: 334px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Water {
+	left: 95px;
+	top: 704px;
+	position: absolute;
+	overflow: visible;
+	width: 49px;
+	white-space: nowrap;
+	text-align: left;
+}
+#School {
+	left: 95px;
+	top: 445px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Satellite {
+	left: 95px;
+	top: 815px;
+	position: absolute;
+	overflow: visible;
+	width: 87px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Soil {
+	left: 95px;
+	top: 371px;
+	position: absolute;
+	overflow: visible;
+	width: 39px;
+	white-space: nowrap;
+	text-align: left;
+}
+#River {
+	left: 95px;
+	top: 741px;
+	position: absolute;
+	overflow: visible;
+	width: 49px;
+	white-space: nowrap;
+	text-align: left;
+}
+#University {
+	left: 95px;
+	top: 482px;
+	position: absolute;
+	overflow: visible;
+	width: 97px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Evacuation {
+	left: 95px;
+	top: 852px;
+	position: absolute;
+	overflow: visible;
+	width: 97px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Old_City {
+	left: 95px;
+	top: 408px;
+	position: absolute;
+	overflow: visible;
+	width: 78px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Plan {
+	left: 95px;
+	top: 778px;
+	position: absolute;
+	overflow: visible;
+	width: 39px;
+	white-space: nowrap;
+	text-align: left;
+}
+#Canal {
+	left: 95px;
+	top: 519px;
+	position: absolute;
+	overflow: visible;
+	width: 49px;
+	white-space: nowrap;
+	text-align: left;
+}
+
+
+
+
+
+
+#Iframe_Network {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+#buttons_uploaddata{
+	margin: auto;
+	margin-top: 29.7%;
+	position: absolute;
+	left: 38.3%;
+	top: 20%;
+	transform: translate(-50%);
+	width: 53.3%;
+	height: auto;
+	cursor: pointer;
+}
+#Button_Freeexplore {
+	margin: auto;
+	margin-top: 40.7%;
+	position: absolute;
+	left: 38.3%;
+	top: 60%;
+	transform: translate(-50%);
+	width: 53.3%;
+	height: auto;
+	cursor: pointer;
+}
+#buttons_freeexplore{
+	margin: auto;
+	position: absolute;
+	transform: translate(-50%);
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+#buttons_freeexplore_click {
+	margin: auto;
+	position: absolute;
+	transform: translate(-50%);
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+#big_menu_group {
+	position: absolute;
+	width: 510px;
+	height: auto;
+	left: 45px;
+	top: 45px;
+	transition: left 0.2s ease-in-out;
+}
+.big_menu_group.pressed {
+	position: absolute;
+	width: 510px;
+	height: auto;
+	left: 45px;
+	top: 45px;
+	transition: left 0.2s ease-in-out;
+	background-image: url(Assets/buttons_freeexplore_click.png);
+	document.querySelector('.big_menu-group').classList.add('pressed');
+}
+#group_menubar {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	overflow: visible;
+}
+#Buttons_menubar {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	overflow: visible;
+}
+#Bildlaufgruppe_1 {
+	mix-blend-mode: normal;
+	position: relative;
+	width: 370px;
+	height: 450px;
+	top: 355px;
+	overflow: scroll;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(25,19,31,1);
+}
+#Buttons_bottominfobar {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	overflow: visible;
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+	opacity: 1;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
+	opacity: 1;
+}
+
+
+.boxContainer{
+	margin: auto;
+	margin-top: 53%;
+	position: absolute;
+	left: 38.3%;
+	transform: translate(-50%);
+	width: 53.3%;
+	height: max-content;
+	border-radius: 50px;
+	background-color: rgb(25, 19, 31);
+}
+.elementsContainer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	background-color: rgb(25, 19, 31);
+	border-radius: 50px;
+}
+.search {
+	border: 0;
+	height: 100%;
+	width: 99%;
+	text-align: center;
+	position: center;
+	border-radius: 50px;
+	font-size: 24px;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(25,19,31,1);
+}
+.search:focus {
+	outline: none;
+}
+@media only screen and (max-width: 700px) {
+	.boxContainer {
+		width: 90%;
+	}
+}
+@media (max-width: 600px) {
+	.search {
+		font-size: 16px;
+	}
+}
