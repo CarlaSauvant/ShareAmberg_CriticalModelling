@@ -1,0 +1,65 @@
+.mediaViewInfo {
+	--web-view-name: Intro Page;
+	--web-view-id: Intro_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Intro_Page;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Intro_Page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(25,19,31,1);
+	overflow: hidden;
+	--web-view-name: Intro Page;
+	--web-view-id: Intro_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+
+#DATA_MODELLING_LOGO_Logo_colou_dn {
+	opacity: 100%;
+	position: absolute;
+	width: 31.9%;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	overflow: visible;
+}
+
+#SyncUp_description {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	top: 48%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	overflow: visible;
+	}
+
+#button_letsgo {
+	position: absolute;
+	width: auto;
+	height: 6%;
+	top: 85%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	overflow: visible;
+	cursor: pointer;
+}
