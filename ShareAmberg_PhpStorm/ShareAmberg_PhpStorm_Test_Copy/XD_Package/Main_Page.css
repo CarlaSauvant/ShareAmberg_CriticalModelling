@@ -330,22 +330,22 @@
 	left: 69px;
 	top: 75px;
 }
+
+
+
 #Bildlaufgruppe_1 {
 	mix-blend-mode: normal;
 	position: absolute;
-	width: 364.162px;
-	height: 510px;
-	left: 83px;
-	top: 416px;
-	overflow: hidden;
-}
-#Gruppe_112 {
-	position: absolute;
-	width: 364.162px;
-	height: 907px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+	width: 22%;
+	height: 45%;
+	left: 2.5%;
+	top: 38%;
+	overflow: scroll;
+	font-family: Courier New;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(25,19,31,1);
 }
 #Author {
 	left: 48.162px;
@@ -355,11 +355,7 @@
 	width: 59px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
 	font-weight: bold;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Keywords {
 	left: 48px;
@@ -369,12 +365,8 @@
 	width: 78px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
 	font-weight: bold;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
-}
+	}
 #checkbox {
 	position: absolute;
 	width: 23px;
@@ -382,8 +374,6 @@
 	left: 48px;
 	top: 36px;
 	overflow: visible;
-}
-#Rechteck_3 {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -392,14 +382,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rechteck_3 {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
-}
+
 #checkbox_bi {
 	position: absolute;
 	width: 23px;
@@ -407,8 +390,6 @@
 	left: 48px;
 	top: 73px;
 	overflow: visible;
-}
-#Rechteck_3_bj {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -416,14 +397,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_bj {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_bk {
 	position: absolute;
@@ -432,8 +405,6 @@
 	left: 48px;
 	top: 110px;
 	overflow: visible;
-}
-#Rechteck_3_bl {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -441,14 +412,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_bl {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_bm {
 	position: absolute;
@@ -457,8 +420,6 @@
 	left: 48px;
 	top: 181px;
 	overflow: visible;
-}
-#Rechteck_3_bn {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -466,14 +427,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_bn {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_bo {
 	position: absolute;
@@ -482,8 +435,6 @@
 	left: 48px;
 	top: 292px;
 	overflow: visible;
-}
-#Rechteck_3_bp {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -491,14 +442,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_bp {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_bq {
 	position: absolute;
@@ -507,8 +450,6 @@
 	left: 48px;
 	top: 403px;
 	overflow: visible;
-}
-#Rechteck_3_br {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -516,14 +457,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_br {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_bs {
 	position: absolute;
@@ -532,8 +465,6 @@
 	left: 48px;
 	top: 514px;
 	overflow: visible;
-}
-#Rechteck_3_bt {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -541,14 +472,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_bt {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_bu {
 	position: absolute;
@@ -557,8 +480,6 @@
 	left: 48px;
 	top: 625px;
 	overflow: visible;
-}
-#Rechteck_3_bv {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -566,14 +487,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_bv {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_bw {
 	position: absolute;
@@ -582,8 +495,6 @@
 	left: 48px;
 	top: 736px;
 	overflow: visible;
-}
-#Rechteck_3_bx {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -591,14 +502,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_bx {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_by {
 	position: absolute;
@@ -607,8 +510,6 @@
 	left: 48px;
 	top: 847px;
 	overflow: visible;
-}
-#Rechteck_3_bz {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -616,14 +517,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_bz {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_b {
 	position: absolute;
@@ -632,8 +525,6 @@
 	left: 48px;
 	top: 218px;
 	overflow: visible;
-}
-#Rechteck_3_b {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -641,14 +532,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_b {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_ca {
 	position: absolute;
@@ -657,8 +540,6 @@
 	left: 48px;
 	top: 329px;
 	overflow: visible;
-}
-#Rechteck_3_ca {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -666,14 +547,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_ca {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_cb {
 	position: absolute;
@@ -682,8 +555,6 @@
 	left: 48px;
 	top: 440px;
 	overflow: visible;
-}
-#Rechteck_3_cb {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -691,14 +562,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cb {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_cc {
 	position: absolute;
@@ -707,8 +570,6 @@
 	left: 48px;
 	top: 551px;
 	overflow: visible;
-}
-#Rechteck_3_cc {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -716,14 +577,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cc {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_cd {
 	position: absolute;
@@ -732,8 +585,6 @@
 	left: 48px;
 	top: 662px;
 	overflow: visible;
-}
-#Rechteck_3_cd {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -741,14 +592,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cd {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_ce {
 	position: absolute;
@@ -757,8 +600,6 @@
 	left: 48px;
 	top: 773px;
 	overflow: visible;
-}
-#Rechteck_3_ce {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -766,14 +607,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_ce {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_cf {
 	position: absolute;
@@ -782,8 +615,6 @@
 	left: 48px;
 	top: 884px;
 	overflow: visible;
-}
-#Rechteck_3_cf {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -791,14 +622,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cf {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_cg {
 	position: absolute;
@@ -807,8 +630,6 @@
 	left: 48px;
 	top: 255px;
 	overflow: visible;
-}
-#Rechteck_3_cg {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -816,14 +637,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cg {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_ch {
 	position: absolute;
@@ -832,8 +645,6 @@
 	left: 48px;
 	top: 366px;
 	overflow: visible;
-}
-#Rechteck_3_ch {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -841,14 +652,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_ch {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_ci {
 	position: absolute;
@@ -857,8 +660,6 @@
 	left: 48px;
 	top: 477px;
 	overflow: visible;
-}
-#Rechteck_3_cj {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -866,14 +667,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cj {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_ck {
 	position: absolute;
@@ -882,8 +675,6 @@
 	left: 48px;
 	top: 588px;
 	overflow: visible;
-}
-#Rechteck_3_cl {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -891,14 +682,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cl {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_cm {
 	position: absolute;
@@ -907,8 +690,6 @@
 	left: 48px;
 	top: 699px;
 	overflow: visible;
-}
-#Rechteck_3_cn {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -916,14 +697,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cn {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #checkbox_co {
 	position: absolute;
@@ -932,8 +705,6 @@
 	left: 48px;
 	top: 810px;
 	overflow: visible;
-}
-#Rechteck_3_cp {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(25,19,31,1);
 	stroke-width: 1px;
@@ -941,14 +712,6 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.Rechteck_3_cp {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 #Climate_Protection_Office {
 	left: 95.162px;
@@ -958,11 +721,6 @@
 	width: 241px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Flooding {
 	left: 95px;
@@ -972,11 +730,6 @@
 	width: 78px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Flood {
 	left: 95px;
@@ -986,11 +739,6 @@
 	width: 49px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #City_Planning_Office {
 	left: 95.162px;
@@ -1000,11 +748,6 @@
 	width: 193px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Damage {
 	left: 95px;
@@ -1014,11 +757,6 @@
 	width: 59px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Architecture {
 	left: 95px;
@@ -1028,11 +766,6 @@
 	width: 116px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Section {
 	left: 95px;
@@ -1042,11 +775,6 @@
 	width: 68px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Amberg_Alliance_for_Families {
 	left: 95.162px;
@@ -1056,11 +784,6 @@
 	width: 270px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Emergency {
 	left: 95px;
@@ -1070,11 +793,6 @@
 	width: 87px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Citizens {
 	left: 95px;
@@ -1084,11 +802,6 @@
 	width: 78px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Municipality {
 	left: 95px;
@@ -1098,11 +811,6 @@
 	width: 116px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Education {
 	left: 95px;
@@ -1112,11 +820,6 @@
 	width: 87px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Amberg {
 	left: 95px;
@@ -1126,11 +829,6 @@
 	width: 59px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Water {
 	left: 95px;
@@ -1140,11 +838,6 @@
 	width: 49px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #School {
 	left: 95px;
@@ -1154,11 +847,6 @@
 	width: 59px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Satellite {
 	left: 95px;
@@ -1168,11 +856,6 @@
 	width: 87px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Soil {
 	left: 95px;
@@ -1182,11 +865,6 @@
 	width: 39px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #River {
 	left: 95px;
@@ -1196,11 +874,6 @@
 	width: 49px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #University {
 	left: 95px;
@@ -1210,11 +883,6 @@
 	width: 97px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Evacuation {
 	left: 95px;
@@ -1224,11 +892,6 @@
 	width: 97px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Old_City {
 	left: 95px;
@@ -1238,11 +901,6 @@
 	width: 78px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Plan {
 	left: 95px;
@@ -1252,11 +910,6 @@
 	width: 39px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
 }
 #Canal {
 	left: 95px;
@@ -1266,91 +919,104 @@
 	width: 49px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Courier New;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(25,19,31,1);
-}
-#Rechteck_31 {
-	fill: rgba(25,19,31,1);
-	stroke: rgba(0,0,0,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.Rechteck_31 {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 147px;
-}
-#Rechteck_32 {
-	fill: rgba(25,19,31,1);
-	stroke: rgba(0,0,0,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.Rechteck_32 {
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	height: 23px;
-	left: 0px;
-	top: 0px;
 }
 
+
+
+#big_menu_group {
+	left: 2.5%;
+}
 #group_menubar {
 	position: absolute;
-	width: 37%;
+	width: 30%;
 	height: auto;
-	left: 5%;
-	top: 8%;
-	overflow: visible;
-}
-#group_menubar_content {
-	position: absolute;
-	width: 40%;
-	height: auto;
-	right: 0;
-	top: 0;
-	overflow: visible;
-}
-#Logo_navyblue {
-	position: absolute;
-	width: 80%;
-	height: auto;
-	right: 0;
-	top: 0;
-	overflow: visible;
-}
-#Logo_syncup_navyblue {
-	position: absolute;
-	width: 80%;
-	height: auto;
-	right: 0;
-	top: 0;
+	left: 2.5%;
+	top: 4%;
 	overflow: visible;
 }
 #Buttons_menubar {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	overflow: visible;
+}
+#group_menubar_filters {
 
 }
-#Buttons_menubutton {
-
+#Buttons_bottominfobar {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	overflow: visible;
 }
-#Button_freeexplore {
-
+#Network_Frame {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
-#Button_search {
 
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
 }
-#Button_uploaddata {
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+	opacity: 1;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
+	opacity: 1;
+}
+
+
+.boxContainer{
+	margin: auto;
+	margin-top: 53%;
+	position: absolute;
+	left: 38.3%;
+	transform: translate(-50%);
+	width: 53.3%;
+	height: max-content;
+	border-radius: 50px;
+	background-color: rgb(25, 19, 31);
+}
+.elementsContainer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	background-color: rgb(25, 19, 31);
+	border-radius: 50px;
+}
+.search {
+	border: 0;
+	height: 100%;
+	width: 99%;
+	text-align: center;
+	position: center;
+	border-radius: 50px;
+	font-size: 24px;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(25,19,31,1);
+}
+.search:focus {
+	outline: none;
+}
+@media only screen and (max-width: 700px) {
+	.boxContainer {
+		width: 90%;
+	}
+}
+@media (max-width: 600px) {
+	.search {
+		font-size: 16px;
+	}
 }
