@@ -1,12 +1,15 @@
 //First we select the color of the backround of our page
 document.body.style.backgroundColor = "#19131f";
 
+// These are functions that use a syntax from a library called Observable, specifically the markdown cells.
+//
+// _d3 imports the version 5 of the D3 library and returns it.
+// _margin returns an object with a property window.
+// _width returns the value of window.innerWidth.
+// _height returns the value of window.innerHeight.
 
-
-
-// SOME RANDOM FUNCTIONS THAT IF I DELETE IT DOES NOT WORK
-function _1(md){return(md`AA`)}
-function _2(md){return(md`BB`)}
+function _1(md){}
+function _2(md){}
 function _d3(require){return(require('d3@5'))}
 function _margin(){return({window})}
 function _width(){return(window.innerWidth)}
@@ -18,8 +21,7 @@ function _7(html){
     return(`
     <style>
         .links {
-            stroke-opacity: 1;
-        }
+            stroke-opacity: 1;}
         
         .group-Actors-City-Administration {
             stroke: #2e7516;

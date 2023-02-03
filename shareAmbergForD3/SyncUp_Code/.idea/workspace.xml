@@ -22,17 +22,11 @@
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/City of Amberg.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/ShareAmberg.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/Php_Test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/php.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/Amberg_Frontend_Carla.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/City of Amberg.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/City of Amberg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/ShareAmberg.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Logo_colou.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Logo_colou@2x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Logo_colou_dn.png" beforeDir="false" />
@@ -41,8 +35,8 @@
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_nav@2x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_whi.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_whi@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/Main_Page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SyncUp_JavaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/SyncUp_JavaScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/.idea/php.xml" beforeDir="false" />
@@ -55,6 +49,18 @@
       <change beforePath="$PROJECT_DIR$/../actualProject/inspector.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/untitled1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/SyncUP_Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/SyncUp_JavaScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/runtime.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/jsLibraryMappings.xml" beforeDir="false" />
@@ -92,9 +98,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/Downloads/cccc/d99fd79dd14c23b8@209.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -149,6 +152,7 @@
       <workItem from="1674903375029" duration="15212000" />
       <workItem from="1675068829590" duration="22689000" />
       <workItem from="1675159557476" duration="17204000" />
+      <workItem from="1675259750240" duration="640000" />
     </task>
     <servers />
   </component>
