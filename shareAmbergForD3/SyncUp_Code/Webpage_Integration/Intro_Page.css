@@ -24,11 +24,6 @@
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
-@keyframes  {
-
-
-}
-
 #DATA_MODELLING_LOGO_Logo_colou_dn {
 	opacity: 100%;
 	position: absolute;
@@ -57,9 +52,10 @@
 	width: auto;
 	height: 6%;
 	top: 85%;
-	left: 50%;
-	/* bring your own prefixes */
-	transform: translate(-50%, -50%);
+	left: 39%;
 	overflow: visible;
 	cursor: pointer;
+}
+#button_letsgo:active {
+	transform: translateY(2px);
 }
