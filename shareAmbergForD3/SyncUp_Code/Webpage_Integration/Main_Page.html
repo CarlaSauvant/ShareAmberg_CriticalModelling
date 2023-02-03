@@ -14,46 +14,55 @@
 	<iframe data-name="Iframe_Network" id="Iframe_Network" src="../index.html" title="Iframe_Network"></iframe>
 	<!-- info bar at the bottom of the page -->
 	<img data-type="Rectangle" data-name="Buttons_bottominfobar" id="Buttons_bottominfobar" src="Assets/buttons_bottominfobar.png">
-	<div data-type="Group" data-name="big_menu_group" id="big_menu_group">
+	<div data-type="Group" data-name="big_menu_group" id="big_menu_group" class="big_menu_group">
+		<!-- background image menu bar -->
 		<div data-type="Group" data-name="group_menubar" id="group_menubar">
-			<!-- background image menu bar -->
 			<img data-type="Rectangle" data-name="Buttons_menubar" id="Buttons_menubar" src="Assets/buttons_menubar.png">
-			<!-- search box -->
-			<div class="boxContainer">
-				<table class="elementsContainer">
-					<tr>
-						<td>
-							<input type="text" placeholder="SEARCH" class="search">
-						</td>
-					</tr>
-				</table>
-			</div>
-			<!-- control buttons -->
-			<button onclick="menubar_slide()" data-name="Button_Freeexplore" id="Button_Freeexplore">
-				<img data-type="Rectangle" data-name="buttons_freeexplore" id="buttons_freeexplore" src="Assets/buttons_freeexplore.png">
-			</button>
-			<img data-type="Rectangle" data-name="buttons_uploaddata" id="buttons_uploaddata" src="Assets/buttons_uploaddata.png">
 		</div>
+		<!-- search box -->
+		<div class="boxContainer">
+            <table class="elementsContainer">
+                <tr>
+                    <td>
+                        <input type="text" placeholder="SEARCH" class="search">
+                    </td>
+                </tr>
+            </table>
+        </div>
+		<!-- control buttons -->
+		<img onclick="slideObject()" data-type="Rectangle" data-name="buttons_freeexplore" id="buttons_freeexplore" src="Assets/buttons_freeexplore.png">
+		<img onclick="window.location.href='Intro_Page.html'" data-type="Rectangle" data-name="buttons_uploaddata" id="buttons_uploaddata" src="Assets/buttons_uploaddata.png">
 		<!-- button that leads back to intro page -->
-		<div data-type="Group" data-name="Gruppe 103" onclick="application.goToTargetView(event)" id="Gruppe_103">
-			<div data-type="Text" data-name="back to intro page" id="back_to_intro_page">
-				<span>back to intro page</span>
-			</div>
-		</div>
+		<img onclick="window.location.href='Intro_Page.html'" data-type="Rectangle" data-name="buttons_backtointropage" id="buttons_backtointropage" src="Assets/buttons_backtointropage.png">
 		<!-- filtering options for search -->
 		<div data-type="Group" data-name="Bildlaufgruppe 1" id="Bildlaufgruppe_1">
+			<p style="font-weight: bold">Author</p><br>
+			<p>
+				<input type="checkbox" id="checkbox1" name="checkbox1" value="climateprotectionoffice">
+				<label for="checkbox1">Climate Protection Office</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox2" name="checkbox2" value="cityplanningoffice">
+				<label for="checkbox2">City Planning Office</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox3" name="checkbox3" value="ambergallianceforfamilies">
+				<label for="checkbox3">Amberg Alliance for Families</label>
+			</p><br>
+
+
+
+
+
+<!--
 			<div data-type="Text" data-name="Author" id="Author">
 				<span>Author</span>
 			</div>
 			<div data-type="Text" data-name="Keywords" id="Keywords">
 				<span>Keywords</span>
 			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3">
-					<rect id="Rechteck_3" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
+			<div class="checkbox" "document.checkbox.style. = 'green';"></div>
+
 			<div data-type="Symbol" data-name="checkbox" id="checkbox_bi" class="checkbox">
 				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bj">
 					<rect id="Rechteck_3_bj" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
@@ -254,8 +263,10 @@
 			</div>
 			<div data-type="Text" data-name="Canal" id="Canal">
 				<span>Canal</span>
-			</div>
+			</div> -->
 		</div>
+		<!-- little logo in menubar that toggles the sliding of the menu bar -->
+		<img onclick="slideObject()" data-type="Rectangle" data-name="logo_navyblue" id="logo_navyblue" src="Assets/DATA%20MODELLING%20LOGO_Logo_navyblue.png">
 	</div>
 </div>
 </body>
