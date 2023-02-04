@@ -11,7 +11,7 @@ FullName:IBM Plex Mono Bold
 MenuName:IBM Plex Mono
 StyleBits:2
 WritingScript:Roman
-OutlineFileName:C:\Users\Fabio\Downloads\Final_SyncUp_Presentation Folder\Document fonts\IBMPlexMono-Bold.ttf
+OutlineFileName:C:\Users\Fabio\Desktop\Share Ambger _ Git\ShareAmberg_CriticalModelling\Final_Presentation\Presentation\Final_SyncUp_Presentation Folder\Final_SyncUp_Presentation Folder\Document fonts\IBMPlexMono-Bold.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -26,30 +26,6 @@ NameArray:0,Win,1,IBM Plex Mono
 %BeginFont
 Handler:DirectoryHandler
 FontType:TrueType
-FontName:PPNeueMontreal-Regular
-FamilyName:PP Neue Montreal
-StyleName:Regular
-FullName:PP Neue Montreal Regular
-MenuName:PP Neue Montreal
-StyleBits:0
-WritingScript:Roman
-OutlineFileName:C:\Users\Fabio\Downloads\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Regular.ttf
-DataFormat:sfntData
-hasSVG:no
-VariableFontType:NonVariableFont
-FileLength:143752
-FileModTime:1647339352
-WeightClass:400
-WidthClass:5
-AngleClass:0
-NameArray:0,Mac,4,PP Neue Montreal Regular
-NameArray:0,Win,1,PP Neue Montreal
-NameArray:0,Win,16,PP Neue Montreal
-%EndFont
-
-%BeginFont
-Handler:DirectoryHandler
-FontType:TrueType
 FontName:PPNeueMontreal-Variable
 FamilyName:PP Neue Montreal
 StyleName:Variable
@@ -58,7 +34,7 @@ MenuName:PP Neue Montreal Variable
 FamilyPrefix:PPNeueMontrealVariable
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\Fabio\Downloads\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Variable.ttf
+OutlineFileName:C:\Users\Fabio\Desktop\Share Ambger _ Git\ShareAmberg_CriticalModelling\Final_Presentation\Presentation\Final_SyncUp_Presentation Folder\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Variable.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:TrueTypeVariableFont
