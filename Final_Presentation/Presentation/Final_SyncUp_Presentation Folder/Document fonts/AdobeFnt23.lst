@@ -1,29 +1,49 @@
 %!Adobe-FontList 1.23
-%Locale:0x40c
+%Locale:0x809
 
 %BeginFont
 Handler:DirectoryHandler
-FontType:Type1
-FontName:PPNeueMontreal-SemiBold
-FamilyName:PP Neue Montreal
-StyleName:SemiBold
-FullName:PP Neue Montreal SemiBold
-MenuName:PP Neue Montreal SemiBold
-StyleBits:0
+FontType:TrueType
+FontName:IBMPlexMono-Bold
+FamilyName:IBM Plex Mono
+StyleName:Bold
+FullName:IBM Plex Mono Bold
+MenuName:IBM Plex Mono
+StyleBits:2
 WritingScript:Roman
-OutlineFileName:C:\Users\kouma\OneDrive\Documents\School Work\Session 5\Projet\finals\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-SemiBold.otf
+OutlineFileName:C:\Users\Fabio\Downloads\Final_SyncUp_Presentation Folder\Document fonts\IBMPlexMono-Bold.ttf
 DataFormat:sfntData
-UsesStandardEncoding:yes
-isCFF:yes
 hasSVG:no
 VariableFontType:NonVariableFont
-FileLength:129104
-FileModTime:1647357276
-WeightClass:600
+FileLength:135932
+FileModTime:1520809200
+WeightClass:700
 WidthClass:5
 AngleClass:0
-NameArray:0,Mac,4,PP Neue Montreal SemiBold
-NameArray:0,Win,1,PP Neue Montreal SemiBold
+NameArray:0,Win,1,IBM Plex Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:PPNeueMontreal-Regular
+FamilyName:PP Neue Montreal
+StyleName:Regular
+FullName:PP Neue Montreal Regular
+MenuName:PP Neue Montreal
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Fabio\Downloads\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:143752
+FileModTime:1647339352
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,PP Neue Montreal Regular
+NameArray:0,Win,1,PP Neue Montreal
 NameArray:0,Win,16,PP Neue Montreal
 %EndFont
 
@@ -38,12 +58,12 @@ MenuName:PP Neue Montreal Variable
 FamilyPrefix:PPNeueMontrealVariable
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\kouma\OneDrive\Documents\School Work\Session 5\Projet\finals\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Variable.ttf
+OutlineFileName:C:\Users\Fabio\Downloads\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Variable.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:TrueTypeVariableFont
 FileLength:403304
-FileModTime:1647357434
+FileModTime:1675500606
 WeightClass:400
 WidthClass:5
 AngleClass:0
