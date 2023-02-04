@@ -10,3 +10,5 @@ function slideObject() {
         isSlid = true;
     }
 }
+
+

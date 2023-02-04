@@ -4,14 +4,47 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Main Page</title>
+<title>SyncUp</title>
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="Main_Page.css"/>
 <script id="mainpagecustomscript" type="text/javascript" src="Main_Page_custom.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 <div id="Main_Page">
 	<!-- network graph -->
 	<iframe data-name="Iframe_Network" id="Iframe_Network" src="../index.html" title="Iframe_Network"></iframe>
+	<!-- legend explaining the network graph -->
+	<div data-type="Group" data-name="legend_group" id="legend_group">
+		<div data-type="Rectangle" data-name="background_form" id="background_legend"></div>
+		<!-- legend text -->
+		<div data-type="Text" data-name="legend_entities_group" id="legend_entities_group">
+			<p>Actors</p><br>
+			<p>Headlines</p><br>
+			<p>Data</p>
+		</div>
+		<!-- legend colour circles -->
+		<div class="svg_container">
+			<img id="card_actor" src="Assets/syncUpIMGFrontW4.png">
+			<img id="card_headline" src="Assets/syncUpIMGFrontW1.png">
+			<img id="card_data" src="Assets/syncUpIMGFrontW7.png">
+		</div>
+	</div>
+	<!-- extra description cards that appear when hovering over the legend -->
+	<div data-type="Group" data-name="legend_explanation_group" id="legend_explanation_group">
+		<img id="card_actor_explanation" src="Assets/addtodatabase_Actors.png">
+		<img id="card_headline_explanation" src="Assets/addtodatabase_Headlines.png">
+		<img id="card_data_explanation" src="Assets/addtodatabase_Data.png">
+	</div>
+	<!-- form for adding to database -->
+	<div data-type="Group" data-name="addtodatabase_group" id="addtodatabase_group">
+		<div data-type="Rectangle" data-name="background_form" id="background_form"></div>
+		<select id="select_cardtype">
+			<option value="none">None</option>
+			<option value="create data card">Create data card</option>
+			<option value="create actor card">Create actor card</option>
+		</select>
+		<img onclick="document.getElementById('addtodatabase_group').style.display = 'none';" data-type="Rectangle" data-name="buttons_x" id="buttons_x" src="Assets/buttons_x.png">
+	</div>
 	<!-- info bar at the bottom of the page -->
 	<img data-type="Rectangle" data-name="Buttons_bottominfobar" id="Buttons_bottominfobar" src="Assets/buttons_bottominfobar.png">
 	<div data-type="Group" data-name="big_menu_group" id="big_menu_group" class="big_menu_group">
@@ -20,7 +53,7 @@
 			<img data-type="Rectangle" data-name="Buttons_menubar" id="Buttons_menubar" src="Assets/buttons_menubar.png">
 		</div>
 		<!-- search box -->
-		<div class="boxContainer">
+		<div class="boxContainer" onclick="document.getElementById('Bildlaufgruppe_1').style.display = 'block';">
             <table class="elementsContainer">
                 <tr>
                     <td>
@@ -31,7 +64,7 @@
         </div>
 		<!-- control buttons -->
 		<img onclick="slideObject()" data-type="Rectangle" data-name="buttons_freeexplore" id="buttons_freeexplore" src="Assets/buttons_freeexplore.png">
-		<img onclick="window.location.href='Intro_Page.html'" data-type="Rectangle" data-name="buttons_uploaddata" id="buttons_uploaddata" src="Assets/buttons_uploaddata.png">
+		<img onclick="document.getElementById('addtodatabase_group').style.display = 'block';" data-type="Rectangle" data-name="buttons_uploaddata" id="buttons_uploaddata" src="Assets/buttons_uploaddata.png">
 		<!-- button that leads back to intro page -->
 		<img onclick="window.location.href='Intro_Page.html'" data-type="Rectangle" data-name="buttons_backtointropage" id="buttons_backtointropage" src="Assets/buttons_backtointropage.png">
 		<!-- filtering options for search -->
@@ -49,221 +82,84 @@
 				<input type="checkbox" id="checkbox3" name="checkbox3" value="ambergallianceforfamilies">
 				<label for="checkbox3">Amberg Alliance for Families</label>
 			</p><br>
-
-
-
-
-
-<!--
-			<div data-type="Text" data-name="Author" id="Author">
-				<span>Author</span>
-			</div>
-			<div data-type="Text" data-name="Keywords" id="Keywords">
-				<span>Keywords</span>
-			</div>
-			<div class="checkbox" "document.checkbox.style. = 'green';"></div>
-
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_bi" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bj">
-					<rect id="Rechteck_3_bj" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_bk" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bl">
-					<rect id="Rechteck_3_bl" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_bm" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bn">
-					<rect id="Rechteck_3_bn" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_bo" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bp">
-					<rect id="Rechteck_3_bp" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_bq" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_br">
-					<rect id="Rechteck_3_br" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_bs" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bt">
-					<rect id="Rechteck_3_bt" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_bu" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bv">
-					<rect id="Rechteck_3_bv" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_bw" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bx">
-					<rect id="Rechteck_3_bx" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_by" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_bz">
-					<rect id="Rechteck_3_bz" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_b" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_b">
-					<rect id="Rechteck_3_b" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_ca" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_ca">
-					<rect id="Rechteck_3_ca" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_cb" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cb">
-					<rect id="Rechteck_3_cb" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_cc" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cc">
-					<rect id="Rechteck_3_cc" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_cd" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cd">
-					<rect id="Rechteck_3_cd" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_ce" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_ce">
-					<rect id="Rechteck_3_ce" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_cf" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cf">
-					<rect id="Rechteck_3_cf" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_cg" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cg">
-					<rect id="Rechteck_3_cg" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_ch" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_ch">
-					<rect id="Rechteck_3_ch" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_ci" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cj">
-					<rect id="Rechteck_3_cj" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_ck" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cl">
-					<rect id="Rechteck_3_cl" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_cm" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cn">
-					<rect id="Rechteck_3_cn" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Symbol" data-name="checkbox" id="checkbox_co" class="checkbox">
-				<svg data-type="Rectangle" data-name="Rechteck 3" class="Rechteck_3_cp">
-					<rect id="Rechteck_3_cp" rx="11.5" ry="11.5" x="0" y="0" width="23" height="23">
-					</rect>
-				</svg>
-			</div>
-			<div data-type="Text" data-name="Climate Protection Office" id="Climate_Protection_Office">
-				<span>Climate Protection Office</span>
-			</div>
-			<div data-type="Text" data-name="Flooding" id="Flooding">
-				<span>Flooding</span>
-			</div>
-			<div data-type="Text" data-name="Flood" id="Flood">
-				<span>Flood</span>
-			</div>
-			<div data-type="Text" data-name="City Planning Office" id="City_Planning_Office">
-				<span>City Planning Office</span>
-			</div>
-			<div data-type="Text" data-name="Damage" id="Damage">
-				<span>Damage</span>
-			</div>
-			<div data-type="Text" data-name="Architecture" id="Architecture">
-				<span>Architecture</span>
-			</div>
-			<div data-type="Text" data-name="Section" id="Section">
-				<span>Section</span>
-			</div>
-			<div data-type="Text" data-name="Amberg Alliance for Families" id="Amberg_Alliance_for_Families">
-				<span>Amberg Alliance for Families</span>
-			</div>
-			<div data-type="Text" data-name="Emergency" id="Emergency">
-				<span>Emergency</span>
-			</div>
-			<div data-type="Text" data-name="Citizens" id="Citizens">
-				<span>Citizens</span>
-			</div>
-			<div data-type="Text" data-name="Municipality" id="Municipality">
-				<span>Municipality</span>
-			</div>
-			<div data-type="Text" data-name="Education" id="Education">
-				<span>Education</span>
-			</div>
-			<div data-type="Text" data-name="Amberg" id="Amberg">
-				<span>Amberg</span>
-			</div>
-			<div data-type="Text" data-name="Water" id="Water">
-				<span>Water</span>
-			</div>
-			<div data-type="Text" data-name="School" id="School">
-				<span>School</span>
-			</div>
-			<div data-type="Text" data-name="Satellite" id="Satellite">
-				<span>Satellite</span>
-			</div>
-			<div data-type="Text" data-name="Soil" id="Soil">
-				<span>Soil</span>
-			</div>
-			<div data-type="Text" data-name="River" id="River">
-				<span>River</span>
-			</div>
-			<div data-type="Text" data-name="University" id="University">
-				<span>University</span>
-			</div>
-			<div data-type="Text" data-name="Evacuation" id="Evacuation">
-				<span>Evacuation</span>
-			</div>
-			<div data-type="Text" data-name="Old City" id="Old_City">
-				<span>Old City</span>
-			</div>
-			<div data-type="Text" data-name="Plan" id="Plan">
-				<span>Plan</span>
-			</div>
-			<div data-type="Text" data-name="Canal" id="Canal">
-				<span>Canal</span>
-			</div> -->
+			<br>
+			<p style="font-weight: bold">Keywords</p><br>
+			<p>
+				<input type="checkbox" id="checkbox4" name="checkbox4" value="climateprotectionoffice">
+				<label for="checkbox4">Flood</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox5" name="checkbox5" value="climateprotectionoffice">
+				<label for="checkbox5">Architecture</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox6" name="checkbox6" value="climateprotectionoffice">
+				<label for="checkbox6">Emergency</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox7" name="checkbox7" value="climateprotectionoffice">
+				<label for="checkbox7">Municipality</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox8" name="checkbox8" value="climateprotectionoffice">
+				<label for="checkbox8">Amberg</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox9" name="checkbox9" value="climateprotectionoffice">
+				<label for="checkbox9">Soil</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox10" name="checkbox10" value="climateprotectionoffice">
+				<label for="checkbox10">Old City</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox11" name="checkbox11" value="climateprotectionoffice">
+				<label for="checkbox11">Section</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox12" name="checkbox12" value="climateprotectionoffice">
+				<label for="checkbox12">Citizen</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox13" name="checkbox13" value="climateprotectionoffice">
+				<label for="checkbox13">Education</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox14" name="checkbox14" value="climateprotectionoffice">
+				<label for="checkbox14">Water</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox15" name="checkbox15" value="climateprotectionoffice">
+				<label for="checkbox15">River</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox16" name="checkbox16" value="climateprotectionoffice">
+				<label for="checkbox16">Plan</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox17" name="checkbox17" value="climateprotectionoffice">
+				<label for="checkbox17">Satellite</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox18" name="checkbox18" value="climateprotectionoffice">
+				<label for="checkbox18">Evacuation</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox19" name="checkbox19" value="climateprotectionoffice">
+				<label for="checkbox19">Damage</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox20" name="checkbox20" value="climateprotectionoffice">
+				<label for="checkbox20">School</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox21" name="checkbox21" value="climateprotectionoffice">
+				<label for="checkbox21">University</label>
+			</p><br>
+			<p>
+				<input type="checkbox" id="checkbox22" name="checkbox22" value="climateprotectionoffice">
+				<label for="checkbox22">Canal</label>
+			</p>
 		</div>
 		<!-- little logo in menubar that toggles the sliding of the menu bar -->
 		<img onclick="slideObject()" data-type="Rectangle" data-name="logo_navyblue" id="logo_navyblue" src="Assets/DATA%20MODELLING%20LOGO_Logo_navyblue.png">

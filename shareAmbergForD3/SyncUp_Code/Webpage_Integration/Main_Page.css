@@ -27,606 +27,6 @@
 
 
 
-/*
-#Author {
-	left: 48.162px;
-	top: 2px;
-	position: absolute;
-	overflow: visible;
-	width: 59px;
-	white-space: nowrap;
-	text-align: left;
-	font-weight: bold;
-}
-#Keywords {
-	left: 48px;
-	top: 149px;
-	position: absolute;
-	overflow: visible;
-	width: 78px;
-	white-space: nowrap;
-	text-align: left;
-	font-weight: bold;
-	}
-.checkbox {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	border-radius: 50%;
-	left: 48px;
-	top: 36px;
-	overflow: visible;
-	background-color: white;
-	border: 1px solid rgba(25,19,31,1);
-	cursor: pointer;
-}
-.checkbox:checked {
-	background-color: rgba(25,19,31,1);
-}
-#checkbox_bi {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 73px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_bk {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 110px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_bm {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 181px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_bo {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 292px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_bq {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 403px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_bs {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 514px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_bu {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 625px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_bw {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 736px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_by {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 847px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_b {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 218px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_ca {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 329px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_cb {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 440px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_cc {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 551px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_cd {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 662px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_ce {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 773px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_cf {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 884px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_cg {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 255px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_ch {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 366px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_ci {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 477px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_ck {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 588px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_cm {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 699px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#checkbox_co {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	left: 48px;
-	top: 810px;
-	overflow: visible;
-	fill: rgba(255,255,255,1);
-	stroke: rgba(25,19,31,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-	cursor: pointer;
-}
-#Climate_Protection_Office {
-	left: 95.162px;
-	top: 39px;
-	position: absolute;
-	overflow: visible;
-	width: 241px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Flooding {
-	left: 95px;
-	top: 186px;
-	position: absolute;
-	overflow: visible;
-	width: 78px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Flood {
-	left: 95px;
-	top: 556px;
-	position: absolute;
-	overflow: visible;
-	width: 49px;
-	white-space: nowrap;
-	text-align: left;
-}
-#City_Planning_Office {
-	left: 95.162px;
-	top: 76px;
-	position: absolute;
-	overflow: visible;
-	width: 193px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Damage {
-	left: 95px;
-	top: 889px;
-	position: absolute;
-	overflow: visible;
-	width: 59px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Architecture {
-	left: 95px;
-	top: 223px;
-	position: absolute;
-	overflow: visible;
-	width: 116px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Section {
-	left: 95px;
-	top: 593px;
-	position: absolute;
-	overflow: visible;
-	width: 68px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Amberg_Alliance_for_Families {
-	left: 95.162px;
-	top: 113px;
-	position: absolute;
-	overflow: visible;
-	width: 270px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Emergency {
-	left: 95px;
-	top: 260px;
-	position: absolute;
-	overflow: visible;
-	width: 87px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Citizens {
-	left: 95px;
-	top: 630px;
-	position: absolute;
-	overflow: visible;
-	width: 78px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Municipality {
-	left: 95px;
-	top: 297px;
-	position: absolute;
-	overflow: visible;
-	width: 116px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Education {
-	left: 95px;
-	top: 667px;
-	position: absolute;
-	overflow: visible;
-	width: 87px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Amberg {
-	left: 95px;
-	top: 334px;
-	position: absolute;
-	overflow: visible;
-	width: 59px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Water {
-	left: 95px;
-	top: 704px;
-	position: absolute;
-	overflow: visible;
-	width: 49px;
-	white-space: nowrap;
-	text-align: left;
-}
-#School {
-	left: 95px;
-	top: 445px;
-	position: absolute;
-	overflow: visible;
-	width: 59px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Satellite {
-	left: 95px;
-	top: 815px;
-	position: absolute;
-	overflow: visible;
-	width: 87px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Soil {
-	left: 95px;
-	top: 371px;
-	position: absolute;
-	overflow: visible;
-	width: 39px;
-	white-space: nowrap;
-	text-align: left;
-}
-#River {
-	left: 95px;
-	top: 741px;
-	position: absolute;
-	overflow: visible;
-	width: 49px;
-	white-space: nowrap;
-	text-align: left;
-}
-#University {
-	left: 95px;
-	top: 482px;
-	position: absolute;
-	overflow: visible;
-	width: 97px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Evacuation {
-	left: 95px;
-	top: 852px;
-	position: absolute;
-	overflow: visible;
-	width: 97px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Old_City {
-	left: 95px;
-	top: 408px;
-	position: absolute;
-	overflow: visible;
-	width: 78px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Plan {
-	left: 95px;
-	top: 778px;
-	position: absolute;
-	overflow: visible;
-	width: 39px;
-	white-space: nowrap;
-	text-align: left;
-}
-#Canal {
-	left: 95px;
-	top: 519px;
-	position: absolute;
-	overflow: visible;
-	width: 49px;
-	white-space: nowrap;
-	text-align: left;
-}
-*/
-
-
-
-
 
 #Iframe_Network {
 	position: absolute;
@@ -656,14 +56,6 @@
 }
 #buttons_freeexplore:active {
 	transform: translateY(2px);
-}
-#buttons_freeexplore_click {
-	margin: auto;
-	position: absolute;
-	transform: translate(-50%);
-	width: 100%;
-	height: auto;
-	cursor: pointer;
 }
 #buttons_backtointropage {
 	position: relative;
@@ -710,8 +102,9 @@
 #Bildlaufgruppe_1 {
 	mix-blend-mode: normal;
 	position: relative;
-	width: 370px;
+	width: 280px;
 	height: 450px;
+	left: 60px;
 	top: 320px;
 	overflow: scroll;
 	font-family: Courier New;
@@ -719,6 +112,7 @@
 	font-weight: normal;
 	font-size: 14px;
 	color: rgba(25,19,31,1);
+	display: none;
 }
 #Buttons_bottominfobar {
 	position: absolute;
@@ -791,4 +185,154 @@
 	.search {
 		font-size: 16px;
 	}
+}
+
+/*
+form for adding to the database
+*/
+
+#addtodatabase_group {
+	position: absolute;
+	width: 876px;
+	height: 876px;
+	right: 45px;
+	top: 45px;
+	display: none;
+}
+#background_form {
+	position: absolute;
+	background-color: white;
+	border-radius: 32px;
+	width: 100%;
+	height: 100%;
+}
+#select_cardtype {
+	position: absolute;
+	left: 45px;
+	top: 45px;
+	font-family: "Courier New";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: rgba(25,19,31,1);
+	background-color: white;
+	border-color: rgba(25,19,31,1);
+	border-width: 2px;
+	border-style: solid;
+	padding: 11px 5px 11px 11px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+#buttons_x {
+	height: 36px;
+	width: auto;
+	position: absolute;
+	top: 45px;
+	right: 45px;
+	cursor: pointer;
+}
+
+
+/*
+legend
+ */
+#legend_group {
+	position: absolute;
+	width: 210px;
+	height: 180px;
+	right: 45px;
+	bottom: 80px;
+	display: block;
+}
+#background_legend {
+	position: absolute;
+	background-color: white;
+	border-radius: 32px;
+	width: 100%;
+	height: 100%;
+}
+#legend_entities_group {
+	position: absolute;
+	font-size: 16px;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: bold;
+	color: rgba(25,19,31,1);
+	left: 50%;
+	top: 50%;
+	transform: translate(-20%, -50%);
+}
+.svg_container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+#card_actor {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 25px;
+	left: 30px;
+}
+#card_headline {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 65px;
+	left: 30px;
+}
+#card_data {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 105px;
+	left: 30px;
+}
+
+/*
+extra cards that explain the content of the legend more closely
+ */
+#legend_explanation_group {
+	display: block;
+	position: absolute;
+	right: 170px;
+	bottom: 120px;
+	height: 230.25px;
+	width: 418.45px;
+}
+#card_data_explanation {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+ }
+#card_data:hover + #card_data_explanation {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#card_headline_explanation {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#card_headline:hover + #card_headline_explanation {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#card_actor_explanation {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#card_actor:hover + #card_actor_explanation {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
