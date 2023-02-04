@@ -231,6 +231,32 @@ form for adding to the database
 	right: 45px;
 	cursor: pointer;
 }
+#buttons_x:active {
+	transform: translateY(2px);
+}
+#buttons_check {
+	height: 36px;
+	width: auto;
+	position: absolute;
+	bottom: 45px;
+	right: 45px;
+	cursor: pointer;
+}
+#buttons_check:active {
+	transform: translateY(2px);
+}
+#buttons_submit {
+	height: 36px;
+	width: auto;
+	position: absolute;
+	bottom: 45px;
+	right: 45px;
+	cursor: pointer;
+	display: none;
+}
+#buttons_submit:active {
+	transform: translateY(2px);
+}
 
 
 /*
@@ -266,6 +292,7 @@ legend
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	overflow: visible;
 }
 #card_actor {
 	position: absolute;
@@ -273,6 +300,7 @@ legend
 	width: 50px;
 	top: 25px;
 	left: 30px;
+	cursor: pointer;
 }
 #card_headline {
 	position: absolute;
@@ -280,6 +308,7 @@ legend
 	width: 50px;
 	top: 65px;
 	left: 30px;
+	cursor: pointer;
 }
 #card_data {
 	position: absolute;
@@ -287,52 +316,33 @@ legend
 	width: 50px;
 	top: 105px;
 	left: 30px;
+	cursor: pointer;
 }
 
 /*
 extra cards that explain the content of the legend more closely
- */
-#legend_explanation_group {
-	display: block;
+*/
+#card_data_explanation {
 	position: absolute;
-	right: 170px;
+	right: 270px;
 	bottom: 120px;
 	height: 230.25px;
 	width: 418.45px;
-}
-#card_data_explanation {
 	display: none;
-	height: 100%;
-	width: 100%;
-	position: absolute;
  }
-#card_data:hover + #card_data_explanation {
-	display: block;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
 #card_headline_explanation {
+	position: absolute;
+	right: 270px;
+	bottom: 120px;
+	height: 230.25px;
+	width: 418.45px;
 	display: none;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
-#card_headline:hover + #card_headline_explanation {
-	display: block;
-	height: 100%;
-	width: 100%;
-	position: absolute;
 }
 #card_actor_explanation {
+	position: absolute;
+	right: 270px;
+	bottom: 120px;
+	height: 230.25px;
+	width: 418.45px;
 	display: none;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
-#card_actor:hover + #card_actor_explanation {
-	display: block;
-	height: 100%;
-	width: 100%;
-	position: absolute;
 }
