@@ -1,126 +1,101 @@
 //First we select the color of the backround of our page
 document.body.style.backgroundColor = "#19131f";
+document.body.style.margin = "0";
+document.body.style.padding = "0";
+
 
 // These are functions that use a syntax from a library called Observable, specifically the markdown cells.
-//
-// _d3 imports the version 5 of the D3 library and returns it.
-// _margin returns an object with a property window.
-// _width returns the value of window.innerWidth.
-// _height returns the value of window.innerHeight.
 
 function _1(md){}
 function _2(md){}
+
+// Function_d3 imports the version 5 of the D3 library and returns it.
 function _d3(require){return(require('d3@5'))}
+
+// _margin returns an object with a property window.
 function _margin(){return({window})}
+
+// _width returns the value of window.innerWidth.
 function _width(){return(window.innerWidth)}
+
+// _height returns the value of window.innerHeight.
 function _height(){return(window.innerHeight)}
 
 
-// HERE WE CAN CHANGE THE LOOK OF THE NETWORK DIAGRAM
-function _7(html){
+//* This function returns a CSS style block for the HTML.
+// The CSS block defines the styles for the "links" class with a "stroke-opacity" property set to 1,
+// which specifies the opacity (transparency) of the stroke (outline) of the element.
+// The "stroke-opacity" property has a value of 1, meaning the stroke is fully opaque and not transparent.
+function _7(){
     return(`
     <style>
         .links {
             stroke-opacity: 1;}
-        
-        .group-Actors-City-Administration {
-            stroke: #2e7516;
         }
-        
-        .group-Actors-Citizenship {
-            stroke: #ffc284;
-        }
-        
-        .group-Actors-Educational-Institutions {
-            stroke: #43b6b3;
-        }
-        
-        .group-Actors-State {
-            stroke: #508f86;
-        }
-        
-        .group-Actors-Corporate-Relations {
-            stroke: #9e79db;
-        }
-        
-        .group-Headlines {
-            stroke: #93ee74;
-        }
-        
-        .group-Data {
-            stroke: #93ee74;
-        }
-
-        text {
-            pointer-events: none;
-            fill: #ffffff;
-            font: 12px "Courier New";
-            align-content: center;
-            
-        }
-
-        svg {
-            border: 1px solid #000;
-        }
-
     </style>`
     )}
 
-
-
-
-
 function _8(md){return(md``)}
-
-//FUNCTION D3 IS OUR NETWORK DIAGRAM
-// HERE WE CAN CHANGE THE COLORS OF THE DOTS INTO THE NETWORK (FUNCTION D3)
-function _colorScale(d3){return(
-d3.scaleOrdinal() //=d3.scaleOrdinal(d3.schemeSet2)
+function DATA_groups(d3){return(
+d3.scaleOrdinal()
     .domain([
-        "Actors - City Administration",
-        "Actors - Citizenship",
-        "Actors - Educational Institutions",
-        "Actors - State",
-        "Actors - Corporate Relations",
-        "Headlines",
-        "Data"])
-    .range(['#93ee74', '#ffc284', '#43b6b3','#508f86','#9e79db','#93ee74','#93ee74'])
-)}
+                "Actors - City Administration",
+                "Actors - Citizenship",
+                "Actors - Educational Institutions",
+                "Actors - State",
+                "Actors - Corporate Relations",
+                "Headlines",
+                "Data"
+            ])
+        )}
 
+//*The code defines a function _simulation that returns a D3 force simulation.
+// The simulation is built using the D3 library and has two forces applied to it: "link" and "charge".
+// The "link" force is created using d3.forceLink() and is used to define how nodes should be connected
+// based on their distances. The .id method sets the id of each node, and the .distance method
+// sets the distance between the nodes.
+// The "charge" force is created using d3.forceManyBody().strength(-100) and is used to
+// define the repulsion between nodes. The .strength method sets the strength of the repulsion,
+// with negative values indicating repulsion.
+// Finally, .alphaTarget(0) sets the target alpha value for the simulation,
+// which determines when the simulation will settle and stop running.
 
-function _simulation(d3,width,height){
+function _simulation(d3){
     return(
         d3.forceSimulation()
             .force("link", d3.forceLink()
                 .id(d => d.id)
-                .distance(20)
-            )
+                .distance(40))
             .force("charge", d3.forceManyBody().strength(-100))
             .alphaTarget(0)
-    )}
+    );
+}
+
 
 // The function "_myChart" creates an svg element, which is a scalable vector graphic,
 // that will be appended to a div. It sets the width and height of the svg element,
 // including the margins, and uses the "transform" attribute to translate the graphic
-// to the left and top. It also sets the "align" attribute of the "g" element to "center".
-
-
+// to the left and top. It also sets the "align" attribute of the "g" element to "center"
 function _myChart(html, d3, width, margin, height, colorScale, simulation) {
-    // Event listener for search bar
-    var foundElements = {};
-    const div = html`<div style='max-width: window.innerwidth; margin: 0;'>
-    <input type="text" id="searchInput" placeholder="Search nodes" oninput="{
-        const dataset = {nodes:[
-            {keywords:'ABC'},{keywords:'bcd'},{keywords:'edg'},{keywords:'flood'}]};
-        const searchTerm = this.value.toLowerCase();
-        console.log((this.dataset.nodes))
-        foundElements = dataset.nodes.filter(function (node){ node.keywords.toLowerCase().includes(searchTerm)});
-        console.log(foundElements);
-    }">
-  </div>`;
+    const div = html`<div style='display: flex; justify-content: center; align-items: center; height: window.innerHeight;'>
+    </div>`;
 
-    const searchInput = d3.select("#searchInput");
-    console.log(typeof(searchInput))
+
+
+    //const searchInput = d3.select("#searchInput");
+    //console.log(typeof(searchInput))
+
+
+//* This part of the code appends an SVG element to the div element in the DOM.
+// It sets the width of the SVG element to the width of the window using window.innerWidth
+// and sets the height of the SVG element to the height of the window using window.innerHeight.
+//
+// A group element "g" is then appended to the SVG element. The transform attribute of the group
+// element is set to translate(${50},${50}), which will cause the group element to be translated
+// 50 units in the x-direction and 50 units in the y-direction.
+//
+// The align attribute of the group element is set to center, which will center the group
+// element within the SVG element.
 
     const svg = d3.select(div)
         .append("svg")
@@ -148,256 +123,256 @@ function _myChart(html, d3, width, margin, height, colorScale, simulation) {
 //DATASET OF OUR NETWORK DIAGRAM
     const dataset =  {
         nodes: [
-            {id:1, name:"Emergency Protocol", group:"Headlines", runtime:60, size: 30, keywords:"Emergency Protocol, Emergency, Protocol, Plan, Flooding, Shelter, Crisis, Vils, River",
+            {id:1, name:"Emergency Protocol", group:"Headlines", runtime:60, size: 60, keywords:"Emergency Protocol, Emergency, Protocol, Plan, Flooding, Shelter, Crisis, Vils, River",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW1.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW1.png"},
-            {id:2, name:"Soil Conditions", group:"Headlines", runtime:60, size: 30, keywords:"Soil Conditions, Soil, Ground, Earth, Conditions, Testing, Foundations",
+            {id:2, name:"Soil Conditions", group:"Headlines", runtime:60, size: 50, keywords:"Soil Conditions, Soil, Ground, Earth, Conditions, Testing, Foundations",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW2.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW2.png"},
-            {id:3, name:"Riverbed Conditions", group:"Headlines", runtime:60, size: 30,keywords:"Riverbed Conditions, River, Flooding, Water, Depth, Vils,  Drainage",
+            {id:3, name:"Riverbed Conditions", group:"Headlines", runtime:60, size: 40,keywords:"Riverbed Conditions, River, Flooding, Water, Depth, Vils,  Drainage",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW3.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW3.png"},
-            {id:4, name:"Amberg Alliance for Families", group:"Actors - Citizenship", runtime:60, size: 30, keywords:"Amberg Alliance for Families",
+            {id:4, name:"Amberg Alliance for Families", group:"Actors - Citizenship", runtime:60, size: 40, keywords:"Amberg Alliance for Families",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW4.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW4.png"},
-            {id:5, name:"Climate Protection Office", group:"Actors - City Administration", runtime:60, size: 30, keywords:"Climate Protection Office",
+            {id:5, name:"Climate Protection Office", group:"Actors - City Administration", runtime:60, size: 40, keywords:"Climate Protection Office",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW5.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW5.png"},
-            {id:6, name:"City Planning Office", group:"Actors - City Administration", runtime:60, size: 30, keywords:"City Planning Office",
+            {id:6, name:"City Planning Office", group:"Actors - City Administration", runtime:60, size: 50, keywords:"City Planning Office",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW6.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW6.png"},
-            {id:7, name:"Crossections of the riverbed", group:"Data", runtime:60, size: 30,
+            {id:7, name:"Crossections of the riverbed", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW7.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW7.png"},
-            {id:8, name:"Population Count Amberg", group:"Data", runtime:60, size: 30,
+            {id:8, name:"Population Count Amberg", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW8.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:9, name:"Locations of Shelters", group:"Data", runtime:60, size: 30,
+            {id:9, name:"Locations of Shelters", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW9.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:10, name:"Riverbed Stratigraphy", group:"Data", runtime:60, size: 30,
+            {id:10, name:"Riverbed Stratigraphy", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW10.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW10.png"},
-            {id:11, name:"Chemical Analysis", group:"Data", runtime:60, size: 30,
+            {id:11, name:"Chemical Analysis", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW11.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW11.png"},
-            {id:12, name:"Deformations", group:"Data", runtime:60, size: 30,
+            {id:12, name:"Deformations", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW12.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW12.png"},
-            {id:13, name:"Drainage Channels", group:"Data", runtime:60, size: 30,
+            {id:13, name:"Drainage Channels", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW13.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW13.png"},
-            {id:14, name:"Emergency Energy Plan", group:"Data", runtime:60, size: 30,
+            {id:14, name:"Emergency Energy Plan", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW14.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW14.png"},
-            {id:15, name:"Evacuation Plan", group:"Data", runtime:60, size: 30,
+            {id:15, name:"Evacuation Plan", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW15.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW15.png"},
-            {id:16, name:"Riverbed: Gradient and Bed Material", group:"Data", runtime:60, size: 30,
+            {id:16, name:"Riverbed: Gradient and Bed Material", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW16.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackW16.png"},
-            {id:17, name:"Satellite Images", group:"Data", runtime:60, size: 30,
+            {id:17, name:"Satellite Images", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW17.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:18, name:"Aerial Images", group:"Data", runtime:60, size: 30,
+            {id:18, name:"Aerial Images", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW18.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:19, name:"Canal Cadastre", group:"Data", runtime:60, size: 30,
+            {id:19, name:"Canal Cadastre", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW19.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:20, name:"Street Cadastre", group:"Data", runtime:60, size: 30,
+            {id:20, name:"Street Cadastre", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW20.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:21, name:"Survey About Floodings Impact on Personal Life", group:"Data", runtime:60, size: 30,
+            {id:21, name:"Survey About Floodings Impact on Personal Life", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW21.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:22, name:"Sensor Maintnance Data", group:"Data", runtime:60, size: 30,
+            {id:22, name:"Sensor Maintnance Data", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW22.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:23, name:"Flooded Areas", group:"Data", runtime:60, size: 30,
+            {id:23, name:"Flooded Areas", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW23.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:24, name:"Water Quality", group:"Data", runtime:60, size: 30,
+            {id:24, name:"Water Quality", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW24.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:25, name:"Rainfall Levels", group:"Data", runtime:60, size: 30,
+            {id:25, name:"Rainfall Levels", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW25.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:26, name:"River Discharge", group:"Data", runtime:60, size: 30,
+            {id:26, name:"River Discharge", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW26.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:27, name:"Water Level Gauge", group:"Data", runtime:60, size: 30,
+            {id:27, name:"Water Level Gauge", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW27.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:28, name:"Flood Protection Wall", group:"Data", runtime:60, size: 30,
+            {id:28, name:"Flood Protection Wall", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW28.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:29, name:"Ecluse", group:"Data", runtime:60, size: 30,
+            {id:29, name:"Ecluse", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW29.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:30, name:"Floodgates", group:"Data", runtime:60, size: 30,
+            {id:30, name:"Floodgates", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW30.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:31, name:"Injuries and Casualties", group:"Data", runtime:60, size: 30,
+            {id:31, name:"Injuries and Casualties", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW31.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:32, name:"Past Flood Damages", group:"Data", runtime:60, size: 30,
+            {id:32, name:"Past Flood Damages", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW32.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:33, name:"Cost of Flood Prevention", group:"Data", runtime:60, size: 30,
+            {id:33, name:"Cost of Flood Prevention", group:"Data", runtime:60, size: 40,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW33.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWD.png"},
-            {id:34, name:"Citizen Surveys", group:"Headlines", runtime:60, size: 30, keywords:"Citizen Surveys, Municipality, Participation, Education, Communication, Issues",
+            {id:34, name:"Citizen Surveys", group:"Headlines", runtime:60, size: 40, keywords:"Citizen Surveys, Municipality, Participation, Education, Communication, Issues",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW34.png",
-                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/Black/syncUpIMGFrontB34.png"},
-            {id:35, name:"Mapping - Hazard and Inundation", group:"Headlines", runtime:60, size: 30, keywords:"Mapping - Hazard and Inundation, Vils, River, Evacuation, Citizens, Municipality, Evacuation",
+                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWH.png"},
+            {id:35, name:"Mapping - Hazard and Inundation", group:"Headlines", runtime:60, size: 40, keywords:"Mapping - Hazard and Inundation, Vils, River, Evacuation, Citizens, Municipality, Evacuation",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW35.png",
-                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/Black/syncUpIMGFrontB35.png"},
-            {id:36, name:"Architecture Competition on Flood Wall", group:"Headlines", runtime:60, size: 30, keywords:"Architecture Competition on Flood Wall, Old City, River, Vils, Water, Propositions, Entries",
+                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWH.png"},
+            {id:36, name:"Architecture Competition on Flood Wall", group:"Headlines", runtime:60, size: 60, keywords:"Architecture Competition on Flood Wall, Old City, River, Vils, Water, Propositions, Entries",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW36.png",
-                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/Black/syncUpIMGFrontB36.png"},
-            {id:37, name:"City Maps", group:"Headlines", runtime:60, size: 30, keywords:"City Maps, Aerial, Satellite, Municipality, Old City, Streets, Cadastre, Buildings",
+                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWH.png"},
+            {id:37, name:"City Maps", group:"Headlines", runtime:60, size: 50, keywords:"City Maps, Aerial, Satellite, Municipality, Old City, Streets, Cadastre, Buildings",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW37.png",
-                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/Black/syncUpIMGFrontB37.png"},
-            {id:38, name:"River Water", group:"Headlines", runtime:60, size: 30, keywords:"River Water, Vils, Amberg, Level, Depth, Flow",
+                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWH.png"},
+            {id:38, name:"River Water", group:"Headlines", runtime:60, size: 50, keywords:"River Water, Vils, Amberg, Level, Depth, Flow",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW38.png",
-                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/Black/syncUpIMGFrontB38.png"},
-            {id:39, name:"Infrastructure Objects", group:"Headlines", runtime:60, size: 30, keywords:"Infrastructure Objects, Dam, Dyke, Ecluse, Floodwall, Flood Gates, Plan",
+                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWH.png"},
+            {id:39, name:"Infrastructure Objects", group:"Headlines", runtime:60, size: 50, keywords:"Infrastructure Objects, Dam, Dyke, Ecluse, Floodwall, Flood Gates, Plan",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW39.png",
-                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/Black/syncUpIMGFrontB39.png"},
-            {id:40, name:"Flooding History", group:"Headlines", runtime:60, size: 30, keywords:"Flooding History, Archives, Old City, Water, River, Vils",
+                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWH.png"},
+            {id:40, name:"Flooding History", group:"Headlines", runtime:60, size: 60, keywords:"Flooding History, Archives, Old City, Water, River, Vils",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW40.png",
-                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/Black/syncUpIMGFrontB40.png"},
-            {id:41, name:"Socioeconomic Development", group:"Headlines", runtime:60, size: 30, keywords:"Socioeconomic Development, Old City, Section, Municipality, Commerce, Finance",
+                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWH.png"},
+            {id:41, name:"Socioeconomic Development", group:"Headlines", runtime:60, size: 60, keywords:"Socioeconomic Development, Old City, Section, Municipality, Commerce, Finance",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW41.png",
-                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/Black/syncUpIMGFrontB41.png"},
-            {id:42, name:"Education Program on Flood Protocols", group:"Headlines", runtime:60, size: 30, keywords:"Education Program on Flood Protocols, Crisis, Protocol, Shelter, Citizens, School, River, Vils, Plan, Evacuation, Damage",
+                back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWH.png"},
+            {id:42, name:"Education Program on Flood Protocols", group:"Headlines", runtime:60, size: 40, keywords:"Education Program on Flood Protocols, Crisis, Protocol, Shelter, Citizens, School, River, Vils, Plan, Evacuation, Damage",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW42.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:43, name:"Citizens", group:"Actors - Citizenship", runtime:60, size: 30, keywords:"Citizens",
+            {id:43, name:"Citizens", group:"Actors - Citizenship", runtime:60, size: 50, keywords:"Citizens",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW43.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:44, name:"TUM", group:"Actors - Educational Institutions", runtime:60, size: 30, keywords:"TUM, Technical University of Munich, Technische Universität München",
+            {id:44, name:"TUM", group:"Actors - Educational Institutions", runtime:60, size: 50, keywords:"TUM, Technical University of Munich, Technische Universität München",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW44.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:45, name:"Schools", group:"Actors - Educational Institutions", runtime:60, size: 30, keywords:"Schools",
+            {id:45, name:"Schools", group:"Actors - Educational Institutions", runtime:60, size: 40, keywords:"Schools",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW45.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:46, name:"Hochschule Amberg", group:"Actors - Educational Institutions", runtime:60, size: 30, keywords:"Hochschule Amberg, Technical University of Amberg",
+            {id:46, name:"Hochschule Amberg", group:"Actors - Educational Institutions", runtime:60, size: 40, keywords:"Hochschule Amberg, Technical University of Amberg",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW46.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:47, name:"State of Bavaria", group:"Actors - State", runtime:60, size: 30, keywords:"State of Bavaria",
+            {id:47, name:"State of Bavaria", group:"Actors - State", runtime:60, size: 40, keywords:"State of Bavaria",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW47.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:48, name:"Civil Participation Office", group:"Actors - City Administration", runtime:60, size: 30, keywords:"Civil Participation Office",
+            {id:48, name:"Civil Participation Office", group:"Actors - City Administration", runtime:60, size: 40, keywords:"Civil Participation Office",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW48.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:49, name:"City Council", group:"Actors - City Administration", runtime:60, size: 30, keywords:"City Council",
+            {id:49, name:"City Council", group:"Actors - City Administration", runtime:60, size: 40, keywords:"City Council",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW49.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:50, name:"Office of Social Affairs", group:"Actors - City Administration", runtime:60, size: 30, keywords:"Office of Social Affairs",
+            {id:50, name:"Office of Social Affairs", group:"Actors - City Administration", runtime:60, size: 60, keywords:"Office of Social Affairs",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW50.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:51, name:"City Archive", group:"Actors - City Administration", runtime:60, size: 30, keywords:"City Archive",
+            {id:51, name:"City Archive", group:"Actors - City Administration", runtime:60, size: 40, keywords:"City Archive",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW51.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:52, name:"Civil Engineering Office", group:"Actors - City Administration", runtime:60, size: 30, keywords:"Civil Engineering Office",
+            {id:52, name:"Civil Engineering Office", group:"Actors - City Administration", runtime:60, size: 40, keywords:"Civil Engineering Office",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW52.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:53, name:"Budget + Tax Office", group:"Actors - City Administration", runtime:60, size: 30, keywords:"Budget + Tax Office",
+            {id:53, name:"Budget + Tax Office", group:"Actors - City Administration", runtime:60, size: 50, keywords:"Budget + Tax Office",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW53.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:54, name:"SentinelHUB", group:"Actors - Corporate Relations", runtime:60, size: 30, keywords:"SentinelHUB",
+            {id:54, name:"SentinelHUB", group:"Actors - Corporate Relations", runtime:60, size: 40, keywords:"SentinelHUB",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW54.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:55, name:"Bayern Atlas", group:"Actors - Corporate Relations", runtime:60, size: 30, keywords:"Bayern Atlas",
+            {id:55, name:"Bayern Atlas", group:"Actors - Corporate Relations", runtime:60, size: 40, keywords:"Bayern Atlas",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW55.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:56, name:"Bayernwerke", group:"Actors - Corporate Relations", runtime:60, size: 30, keywords:"Bayernwerke",
+            {id:56, name:"Bayernwerke", group:"Actors - Corporate Relations", runtime:60, size: 40, keywords:"Bayernwerke",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW56.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:57, name:"Water Management Office in Weiden", group:"Actors - Corporate Relations", runtime:60, size: 30, keywords:"Water Management Office in Weiden",
+            {id:57, name:"Water Management Office in Weiden", group:"Actors - Corporate Relations", runtime:60, size: 50, keywords:"Water Management Office in Weiden",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW57.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:58, name:"Auerheimer Engineering Bureau", group:"Actors - Corporate Relations", runtime:60, size: 30, keywords:"Auerheimer Engineering Bureau",
+            {id:58, name:"Auerheimer Engineering Bureau", group:"Actors - Corporate Relations", runtime:60, size: 50, keywords:"Auerheimer Engineering Bureau",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW58.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:59, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30, keywords:"Stadtwerke-Amberg",
+            {id:59, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 50, keywords:"Stadtwerke-Amberg",
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW59.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWA.png"},
-            {id:60, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:60, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:61, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:61, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:62, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:62, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:63, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:63, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:64, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:64, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:65, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:65, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:66, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:66, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:67, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:67, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:68, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:68, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:69, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:69, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:70, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:70, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:71, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:71, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:72, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:72, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:73, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:73, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:74, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:74, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:75, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:75, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:76, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:76, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:77, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:77, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:78, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:78, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:79, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:79, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"},
-            {id:80, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 30,
+            {id:80, name:"Stadtwerke-Amberg", group:"Actors - Corporate Relations", runtime:60, size: 35,
                 front:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20front/White/syncUpIMGFrontW60.png",
                 back:"https://raw.githubusercontent.com/CarlaSauvant/ShareAmberg_CriticalModelling/main/cards/images%20back/White/syncUpIMGBackWG.png"}
         ],
         links: [
             {source: 1, target:4, gradient:3},
             {source: 42, target:4, gradient:3},
-            {source: 2, target:5, gradient:3},
+            {source: 2, target:5, gradient:8},
             {source: 3, target:5, gradient:3},
             {source: 35, target:5, gradient:3},
             {source: 36, target:5, gradient:3},
             {source: 38, target:5, gradient:3},
-            {source: 2, target:6, gradient:3},
+            {source: 2, target:6, gradient:8},
             {source: 3, target:6, gradient:3},
             {source: 35, target:6, gradient:3},
             {source: 36, target:6, gradient:3},
@@ -409,7 +384,7 @@ function _myChart(html, d3, width, margin, height, colorScale, simulation) {
             {source: 1, target:9, gradient:1},
             {source: 2, target:10, gradient:1},
             {source: 2, target:11, gradient:1},
-            {source: 2, target:12, gradient:1},
+            {source: 2, target:12, gradient:6},
             {source: 3, target:12, gradient:1},
             {source: 3, target:13, gradient:1},
             {source: 1, target:14, gradient:1},
@@ -438,6 +413,8 @@ function _myChart(html, d3, width, margin, height, colorScale, simulation) {
             {source: 41, target:33, gradient:1},
             {source: 3, target:38, gradient:2},
             {source: 1, target:42, gradient:3},
+            {source: 22, target:6, gradient:3},
+            {source: 22, target:5, gradient:3},
             {source: 34, target:43, gradient:3},
             {source: 36, target:43, gradient:3},
             {source: 42, target:44, gradient:3},
@@ -486,7 +463,7 @@ function _myChart(html, d3, width, margin, height, colorScale, simulation) {
             {source: 36, target:75, gradient:4},
             {source: 51, target:75, gradient:5},
             {source: 36, target:76, gradient:4},
-            {source: 51, target:76, gradient:5},
+            {source: 51, target:76, gradient:1},
             {source: 1, target:77, gradient:4},
             {source: 47, target:77, gradient:5},
             {source: 58, target:78, gradient:5},
@@ -496,14 +473,30 @@ function _myChart(html, d3, width, margin, height, colorScale, simulation) {
     };
 
 
+
 // HERE WE CAN CHANGE THE STYLE OF THE LINKS
     const gradient = [
         {id: "gradient1", color1: "#ad479f", Color2: "#ff303c"}, // Headline --> Data
         {id: "gradient2", color1: "#ad479f", Color2: "#ab2599"}, // Headline --> Headline
         {id: "gradient3", color1: "#ad479f", Color2: "#316ad9"}, // Headline --> Actor
         {id: "gradient4", color1: "#ad479f", Color2: "#ffffff"}, // Headline --> White (not done)
-        {id: "gradient5", color1: "#316ad9", Color2: "#ffffff"} // Actor --> White (not done)
+        {id: "gradient5", color1: "#316ad9", Color2: "#ffffff"}, // Actor --> White (not done)
+
+        {id: "gradient6", color1: "#ff303c", Color2: "#ad479f"}, // Data --> Headline
+        {id: "gradient7", color1: "#ad479f", Color2: "#ab2599"}, // Headline --> Headline
+        {id: "gradient8", color1: "#316ad9", Color2: "#ad479f"}, // Actor --> Headline
+        {id: "gradient9", color1: "#ffffff", Color2: "#ad479f"}, // White --> Headline (not done)
+        {id: "gradient10", color1: "#ffffff", Color2: "#316ad9"} // White --> Actor (not done)
     ];
+    function createNodeMap(nodes) {
+        const nodeMap = {};
+        nodes.forEach(node => {
+            nodeMap[node.id] = { x: node.x, y: node.y };
+        });
+        return nodeMap;
+    }
+
+    const nodeMap = createNodeMap(dataset.nodes);
 
 // Define the gradients
     const defs = svg.append("defs");
@@ -514,6 +507,36 @@ function _myChart(html, d3, width, margin, height, colorScale, simulation) {
             .attr("y1", "0%")
             .attr("x2", "0%")
             .attr("y2", "100%");
+
+        //* gradient.forEach(gradient => {
+        //         const firstNode = gradient.node1;
+        //         const secondNode = gradient.node2;
+        //
+        //         const linearGradient = defs.append("linearGradient")
+        //             .attr("id", gradient.id)
+        //             .attr("x1", d => d.source.x)
+        //             .attr("y1", d => d.source.y)
+        //             .attr("x2", d => d.target.x)
+        //             .attr("y2", d => d.target.y);
+
+        // //   .attr("x1", d => d.source.x)
+        //      .attr("y1", d => d.source.y)
+        //     .attr("x2", d => d.target.x)
+        //    .attr("y2", d => d.target.y)
+
+        // .attr("id", gradient.id)
+        //  .attr("x1", () => {
+        //      return nodeMap[gradient.node1].x + '%';
+            //  })
+        // .attr("y1", () => {
+        //      return nodeMap[gradient.node1].y + '%';
+            //   })
+        //  .attr("x2", () => {
+        //       return nodeMap[gradient.node2].x + '%';
+            //   })
+        //   .attr("y2", () => {
+        //     return nodeMap[gradient.node2].y + '%';
+        //  });
 
         linearGradient.append("stop")
             .attr("offset", "0%")
@@ -530,8 +553,34 @@ function _myChart(html, d3, width, margin, height, colorScale, simulation) {
         .enter()
         .append("line") //For each data item not bound to an existing element, appends a new line element.
         .attr("class", "links") //Sets the class of the line elements to "links".
-        .attr("stroke", (d, i) => `url(#gradient${d.gradient % 5 })`) // Apply the gradient to the stroke of the line elements.
-        .attr("stroke-width", "4px") //Sets the stroke width of the line elements to 2 pixels.
+        .attr("stroke", (d) => {
+            if (d.gradient === 1) {
+                return `url(#gradient1)`;
+            } else if (d.gradient === 2) {
+                return `url(#gradient2)`;
+            } else if (d.gradient === 3) {
+                return `url(#gradient3)`;
+            } else if (d.gradient === 4) {
+                return `url(#gradient4)`;
+            } else if (d.gradient === 5) {
+                return `url(#gradient5)`;
+            } else if (d.gradient === 6) {
+                return `url(#gradient6)`;
+            } else if (d.gradient === 7) {
+                return `url(#gradient7)`;
+            } else if (d.gradient === 8) {
+                return `url(#gradient8)`;
+            } else if (d.gradient === 9) {
+                return `url(#gradient9)`;
+            } else if (d.gradient === 10) {
+                return `url(#gradient10)`;
+            } else {
+                return `url(#gradient${d.gradient % 10})`;
+            }
+        })
+
+
+        .attr("stroke-width", "3px") //Sets the stroke width of the line elements to 2 pixels.
         .style("opacity", 1) //Sets the opacity of the line elements to 0.85.
         .attr("id",d=> "line"+d.source+d.target) // Sets the ID of the line elements to "line" followed by the source and target properties of the corresponding data item.
         .attr("class", "links"); //Sets the class of the line elements to "links".
@@ -547,17 +596,6 @@ const edgepaths = svg.selectAll(".edgepath") //make path go along with the link 
         .attr('stroke-opacity', 0)
         .attr('id', function (d, i) {return 'edgepath' + i})
         .style("pointer-events", "none");
-
-const Edge_Labels = svg.selectAll(".edgelabel")
-        .data(dataset.links)
-        .enter()
-        .append('text')
-        .style("pointer-events", "none")
-        .attr('class', 'edgelabel')
-        .attr('id', function (d, i) {return 'edgelabel' + i})
-        .attr('font-size', 5)
-        .attr('fill', '#aaa');
-
 
   
 // Initialize the nodes
@@ -598,19 +636,19 @@ const Edge_Labels = svg.selectAll(".edgelabel")
                 .select("image")
                 .transition()
                 .duration(350)
-                .style("opacity", 0.3)
+                .style("opacity", 0.5)
                 .on("end", function() {
                     if (d3.select(this).attr("xlink:href") === d.front) {
                         d3.select(this)
                             .attr("xlink:href", d.back)
                             .transition()
-                            .duration(350)
+                            .duration(400)
                             .style("opacity", 1);
                     } else {
                         d3.select(this)
                             .attr("xlink:href", d.front)
                             .transition()
-                            .duration(350)
+                            .duration(400)
                             .style("opacity", 1);
                     }
                 });
@@ -619,7 +657,7 @@ const Edge_Labels = svg.selectAll(".edgelabel")
 
     function zoom_actions(){
         svg.transition()
-            .duration(350)
+            .duration(1200)
             .attr("transform", d3.event.transform);
     }
 
@@ -673,7 +711,7 @@ node.call(d3.drag() //sets the event listener for the specified typenames and re
             d.active =active;
  })
 
-  
+
   
  //Listen for tick events to render the nodes as they update in your Canvas or SVG.
  simulation
@@ -734,9 +772,10 @@ export default function define(runtime, observer) {
   main.variable(observer("height")).define("height", ["margin"], _height);
   main.variable(observer()).define(["html"], _7);
   main.variable(observer()).define(["md"], _8);
-  main.variable(observer("colorScale")).define("colorScale", ["d3"], _colorScale);
+  main.variable(observer("colorScale")).define("colorScale", ["d3"], DATA_groups);
   main.variable(observer("simulation")).define("simulation", ["d3","width","height"], _simulation);
   main.variable(observer("myChart")).define("myChart", ["html","d3","width","margin","height","colorScale","simulation"], _myChart);
+
 
   return main;
 }

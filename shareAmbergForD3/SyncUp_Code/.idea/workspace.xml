@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="935b04f0-7cf6-4b80-b24a-55d899005b89" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Webpage_Integration/Assets/buttons_x.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Webpage_Integration/Assets/syncUpIMGFrontW1.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Webpage_Integration/Assets/syncUpIMGFrontW4.png" afterDir="false" />
@@ -15,6 +16,79 @@
       <change beforePath="$PROJECT_DIR$/Webpage_Integration/Main_Page.css" beforeDir="false" afterPath="$PROJECT_DIR$/Webpage_Integration/Main_Page.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Webpage_Integration/Main_Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Webpage_Integration/Main_Page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Webpage_Integration/Main_Page_custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/Webpage_Integration/Main_Page_custom.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../../Actors Text Fabio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../All_Separated/AllSeparated.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../All_Separated/AllSeparated.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Presentation_230124/Presentation_230124.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Presentation_230124/Presentation_230124.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergDiagram.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergDiagram.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergDiagram.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergDiagram.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergTablesScripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShareAmberg/ShareAmbergTablesScripts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/Php_Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/runConfigurations/console2_sql.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/City of Amberg.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/City of Amberg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test/ShareAmberg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Logo_colou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Logo_colou@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Logo_colou_dn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Logo_colou_dn@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_nav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_nav@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_whi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_whi@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cards/images back/White/syncUpIMGBackWG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SyncUp_JavaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/SyncUp_JavaScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../actualProject/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/untitled1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../actualProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/d99fd79dd14c23b8@209.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/inspector.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/untitled1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/SyncUP_Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/SyncUp_JavaScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/23c1380475c146c7@79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/ambergNodesLinksTablesD3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/inspector.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/network-d3-force-graph.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exampleProject/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shareAmbergNodesLinksFull.json" beforeDir="false" afterPath="$PROJECT_DIR$/../shareAmbergNodesLinksFull.json" afterDir="false" />
+>>>>>>> 2bb2bee4d58f8477d87fcea5cb85b345ff58f032
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +139,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "ASKED_ADD_EXTERNAL_FILES": "true",
+=======
+>>>>>>> 2bb2bee4d58f8477d87fcea5cb85b345ff58f032
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -73,7 +150,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "js.last.introduce.type": "VAR",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/Fabio/Desktop/Share Ambger _ Git/ShareAmberg_CriticalModelling/shareAmbergForD3/exampleProject",
+=======
+    "last_opened_file_path": "C:/Users/Fabio/Downloads/wetransfer_exampleproject-modified_2023-01-28_1822/actualProject - MODIFIED",
+>>>>>>> 2bb2bee4d58f8477d87fcea5cb85b345ff58f032
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,6 +188,8 @@
       <workItem from="1675068829590" duration="22689000" />
       <workItem from="1675159557476" duration="17204000" />
       <workItem from="1675259750240" duration="640000" />
+      <workItem from="1675332128832" duration="1549000" />
+      <workItem from="1675368183455" duration="26856000" />
     </task>
     <servers />
   </component>
@@ -124,7 +207,21 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/SyncUp_JavaScript.js</url>
+          <line>123</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> 2bb2bee4d58f8477d87fcea5cb85b345ff58f032
   </component>
 </project>
