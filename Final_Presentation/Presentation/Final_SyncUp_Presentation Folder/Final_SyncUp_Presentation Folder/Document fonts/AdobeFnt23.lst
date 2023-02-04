@@ -1,0 +1,50 @@
+%!Adobe-FontList 1.23
+%Locale:0x809
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:IBMPlexMono-Bold
+FamilyName:IBM Plex Mono
+StyleName:Bold
+FullName:IBM Plex Mono Bold
+MenuName:IBM Plex Mono
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Fabio\Downloads\Final_SyncUp_Presentation Folder\Final_SyncUp_Presentation Folder\Document fonts\IBMPlexMono-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:135932
+FileModTime:1520809200
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,IBM Plex Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:PPNeueMontreal-Variable
+FamilyName:PP Neue Montreal
+StyleName:Variable
+FullName:PP Neue Montreal Variable
+MenuName:PP Neue Montreal Variable
+FamilyPrefix:PPNeueMontrealVariable
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Fabio\Downloads\Final_SyncUp_Presentation Folder\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Variable.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:TrueTypeVariableFont
+FileLength:403304
+FileModTime:1675500606
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,PP Neue Montreal Variable
+NameArray:0,Win,1,PP Neue Montreal Variable
+NameArray:0,Win,16,PP Neue Montreal
+%EndFont
+
