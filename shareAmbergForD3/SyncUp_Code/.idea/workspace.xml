@@ -35,14 +35,14 @@
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_nav@2x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_whi.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ShareAmberg_PhpStorm/ShareAmberg_PhpStorm_Test_Copy/XD_Package/DATA_MODELLING_LOGO_Syncup_whi@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cards/images back/White/syncUpIMGBackWG.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SyncUp_JavaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/SyncUp_JavaScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../actualProject/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/.idea/untitled1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actualProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../actualProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/d99fd79dd14c23b8@209.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject/index.js" beforeDir="false" />
@@ -51,9 +51,7 @@
       <change beforePath="$PROJECT_DIR$/../actualProject/runtime.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/php.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/untitled1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../actualProject_MODIFIED/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/SyncUP_Style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actualProject_MODIFIED/SyncUp_JavaScript.js" beforeDir="false" />
@@ -110,24 +108,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.last.introduce.type&quot;: &quot;VAR&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Fabio/Desktop/Share Ambger _ Git/ShareAmberg_CriticalModelling/shareAmbergForD3/exampleProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.last.introduce.type": "VAR",
+    "last_opened_file_path": "C:/Users/Fabio/Downloads/wetransfer_exampleproject-modified_2023-01-28_1822/actualProject - MODIFIED",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Public\Documents\Adobe\untitled1" />
@@ -153,6 +151,8 @@
       <workItem from="1675068829590" duration="22689000" />
       <workItem from="1675159557476" duration="17204000" />
       <workItem from="1675259750240" duration="640000" />
+      <workItem from="1675332128832" duration="1549000" />
+      <workItem from="1675368183455" duration="26856000" />
     </task>
     <servers />
   </component>
@@ -169,5 +169,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/SyncUp_JavaScript.js</url>
+          <line>123</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
