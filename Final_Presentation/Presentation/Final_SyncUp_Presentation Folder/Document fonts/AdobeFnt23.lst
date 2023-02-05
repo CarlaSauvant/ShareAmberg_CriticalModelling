@@ -1,5 +1,49 @@
 %!Adobe-FontList 1.23
-%Locale:0x40c
+%Locale:0x809
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:IBMPlexMono-Bold
+FamilyName:IBM Plex Mono
+StyleName:Bold
+FullName:IBM Plex Mono Bold
+MenuName:IBM Plex Mono
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Fabio\Desktop\Share Ambger _ Git\ShareAmberg_CriticalModelling\Final_Presentation\Drawings\Final_SyncUp_Presentation Folder\Document fonts\IBMPlexMono-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:135932
+FileModTime:1520809200
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,IBM Plex Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:IBMPlexMono-Regular
+FamilyName:IBM Plex Mono
+StyleName:Regular
+FullName:IBM Plex Mono Regular
+MenuName:IBM Plex Mono
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Fabio\Desktop\Share Ambger _ Git\ShareAmberg_CriticalModelling\Final_Presentation\Drawings\Final_SyncUp_Presentation Folder\Document fonts\IBMPlexMono-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:133720
+FileModTime:1520809200
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,IBM Plex Mono
+%EndFont
 
 %BeginFont
 Handler:DirectoryHandler
@@ -12,17 +56,43 @@ MenuName:PP Neue Montreal Variable
 FamilyPrefix:PPNeueMontrealVariable
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\kouma\OneDrive\Documents\School Work\Session 5\Projet\FINALS\drawings\problem-goal\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Variable.ttf
+OutlineFileName:C:\Users\Fabio\Desktop\Share Ambger _ Git\ShareAmberg_CriticalModelling\Final_Presentation\Drawings\Final_SyncUp_Presentation Folder\Document fonts\PPNeueMontreal-Variable.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:TrueTypeVariableFont
 FileLength:403304
-FileModTime:1647357434
+FileModTime:1675500606
 WeightClass:400
 WidthClass:5
 AngleClass:0
 NameArray:0,Mac,4,PP Neue Montreal Variable
 NameArray:0,Win,1,PP Neue Montreal Variable
 NameArray:0,Win,16,PP Neue Montreal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SuiGenerisRg-Regular
+FamilyName:Sui Generis
+StyleName:Regular
+FullName:SuiGenerisRg-Regular
+MenuName:Sui Generis Rg
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Fabio\Desktop\Share Ambger _ Git\ShareAmberg_CriticalModelling\Final_Presentation\Drawings\Final_SyncUp_Presentation Folder\Document fonts\sui generis rg.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:33448
+FileModTime:1624381912
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,SuiGenerisRg-Regular
+NameArray:0,Win,1,Sui Generis Rg
+NameArray:0,Win,16,Sui Generis
 %EndFont
 
