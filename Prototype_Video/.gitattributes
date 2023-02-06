@@ -1,0 +1,4 @@
+Prototype_Video/SyncUp_Video_01.mp4 filter=lfs diff=lfs merge=lfs -text
+Prototype_Video/SyncUp_Video_failsafe.wmv filter=lfs diff=lfs merge=lfs -text
+Prototype_Video/raw_material/free filter=lfs diff=lfs merge=lfs -text
+explore.mp4 filter=lfs diff=lfs merge=lfs -text
